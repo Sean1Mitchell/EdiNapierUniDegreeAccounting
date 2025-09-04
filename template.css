@@ -458,6 +458,9 @@ p {
         font-size: 14px;
     }
 
+  .logo {
+    font-size: 1.0rem;
+
 }
 
 @media (max-width: 771px) {
