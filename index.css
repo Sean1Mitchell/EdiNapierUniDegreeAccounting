@@ -184,7 +184,7 @@ body.sidebar-open {
     display: block;
     text-align: center;
     width: 100%;
-    background-color: var(--base-clr);
+    background-color: var(--hover-clr);
     color: var(--text-clr);
     padding: 10px 20px;
     border: 1px solid white;
@@ -202,6 +202,10 @@ body.sidebar-open {
 
 .topic-btn:hover {
     background-color: var(--accent-clr);
+}
+
+.trimester {
+    margin: 10px;
 }
 
 
@@ -223,7 +227,43 @@ p {
     text-align: center;
 }
 
-@media (max-width: 820px) {
+@media (min-width: 1200px) { /* full laptop (my own) to further and beyond! */
+
+    .topic-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-box-trimester {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .trimester-content {
+        font-size: 20px;
+    }
+
+    .trimester-sidebar {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) { /* From 772px to 1200px */ /* half laptop to full laptop (my own) */
 
     .topic-btn {
         display: flex;
@@ -245,9 +285,14 @@ p {
     p {
         font-size: 14px;
     }
+
+    .trimester-content {
+        font-size: 20px;
+    }
+
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) { /* From 0px to 500px */ /* nothing to mobile */
     h1 {
         font-size: 24px;
     }
@@ -267,11 +312,36 @@ p {
     .logo {
         font-size: 20px;
     }
+
+    .trimester-content {
+        font-size: 20px;
+    }
 }
 
-@media (max-width: 771px) {
+@media (max-width: 771px) { /* From 501px to 771px */ /* mobile to half laptop */
     .button-grid {
         display: flex;
         flex-direction: column;
     }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .trimester-content {
+        font-size: 20px;
+    }
+
 }
