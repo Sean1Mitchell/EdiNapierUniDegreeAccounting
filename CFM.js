@@ -124,7 +124,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Clicking outside tooltips/info boxes closes them
     document.addEventListener('click', e => {
         if (!e.target.closest('.info-wrapper')) {
-            document.querySelectorAll('.info-box.show').forEach(box => box.classList.remove('show'));
-        }
+                document.querySelectorAll('.info-box.show').forEach(box => box.classList.remove('show'));
+            }
+        });
+
+    // TOC dropdown toggle
+    const tocBtn = document.querySelector(".table-of-contents-btn");
+    const tocContent = document.querySelector(".table-of-contents-content");
+
+    tocBtn.addEventListener("click", () => {
+      // Toggle the display between block and none
+      tocContent.style.display = tocContent.style.display === "block" ? "none" : "block";
     });
+
 });

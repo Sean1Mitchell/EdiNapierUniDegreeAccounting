@@ -146,7 +146,50 @@ body.sidebar-open {
     border-radius: 15px;
     padding: 15px;
     text-align: center;
+    scroll-margin-top: 70px;
 }
+
+/*       This is for the table of contents                 */
+.table-of-contents-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: var(--base-clr);
+    border-radius: 8px;
+    border: 3px solid var(--line-clr);
+    width: fit-content;
+    justify-self: center;
+}
+
+/* Style links */
+.table-of-contents-content a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    font-size: 20px;
+}
+
+.table-of-contents-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    border: var(--accent-clr) 0.125em solid;
+    background: var(--hover-clr);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.table-of-contents-btn:hover {
+    background: var(--accent-clr);
+}
+/*       This is for the table of contents                 */
 
 h1 {
     text-align: center;
@@ -172,13 +215,6 @@ p {
     font-size: 20px;
 }
 
-.content-box ul, .content-box ol {
-    font-family: "Noto Sans", sans-serif;
-    display: inline-block;
-    margin: 10px 0;
-    text-align: left;
-}
-
 .content-table {
     text-align: center;
     border-collapse: collapse;
@@ -199,6 +235,56 @@ p {
     white-space: nowrap;
 }
 
+
+
+
+
+
+.table-of-contents-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: var(--base-clr);
+    border-radius: 8px;
+    border: 3px solid var(--line-clr);
+    width: fit-content;
+    justify-self: center;
+}
+
+/* Style links */
+.table-of-contents-content a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    font-size: 20px;
+}
+
+.table-of-contents-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    border: var(--accent-clr) 0.125em solid;
+    background: var(--hover-clr);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.table-of-contents-btn:hover {
+    background: var(--accent-clr);
+}
+
+
+
+
+
+
 .info-wrapper {
     display: inline-flex;
     align-items: center;
@@ -207,55 +293,41 @@ p {
 }
 
 .info-button {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    border-radius: 50%;
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    display: block;
+    padding: 8px 12px;
     border: none;
-    outline: none;
+    border-radius: 6px;
+    border: var(--accent-clr) 0.125em solid;
+    background: var(--hover-clr);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .info-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
+    background-color: var(--accent-clr);
 }
 
-.info-button:focus {
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
-}
-
-.info-button.active {
-    background-color: #28a745;
-}
-
-/* Basic dropdown style (your original approach) */
 .info-box {
     display: none;
     margin-top: 10px;
-    padding: 12px;
-    background: var(--accent-clr);
+    padding: 10px;
+    background: var(--base-clr);
+    border-radius: 8px;
+    border: 3px solid var(--line-clr);
     color: black;
     font-weight: bold;
     font-size: 14px;
-    border: 1px solid #dee2e6;
-    border-radius: 6px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     animation: fadeIn 0.3s ease;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .info-box.show {
     display: block;
 }
 
-/* Tooltip style alternative */
 .info-wrapper.tooltip-style {
     position: relative;
 }
@@ -291,7 +363,6 @@ p {
     z-index: 2000;
 }
 
-/* Modal style alternative */
 .modal-overlay {
     display: none;
     position: fixed;
@@ -413,6 +484,17 @@ p {
         white-space: normal;
     }
 
+    .table-of-contents-btn {
+        font-size: 14px;
+    }
+
+    .table-of-contents-contents a {
+        font-size: 14px;
+    }
+
+    .info-button {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -466,6 +548,18 @@ p {
         font-size: 20px;
     }
 
+    .table-of-contents-btn {
+        font-size: 14px;
+    }
+
+    .table-of-contents-content a {
+        font-size: 14px;
+    }
+
+    .info-button {
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 771px) {
@@ -494,7 +588,7 @@ p {
         font-size: 14px;
     }
 
-        .content-table {
+    .content-table {
         text-align: center;
         border-collapse: collapse;
         table-layout: auto;
@@ -512,6 +606,18 @@ p {
     }
 
     .info-box {
+        font-size: 14px;
+    }
+
+    .table-of-contents-btn {
+        font-size: 14px;
+    }
+
+    .table-of-contents-content a {
+        font-size: 14px;
+    }
+
+    .info-button {
         font-size: 14px;
     }
 }

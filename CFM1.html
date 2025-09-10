@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CFM - Module 1</title>
-  <link rel="stylesheet" href="CFM.css">
-  <link rel="stylesheet" href="https://font.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFM - Module 1</title>
+    <link rel="stylesheet" href="CFM.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="logo">Edinburgh Napier University</div>
@@ -104,19 +110,137 @@
         <div class="main-content">
             <div class="content-section">
                 <div class="content-box-intro">
-                    <h1></h1>
+                    <h1>Last Year Reflection</h1>
+                    <p>In this session, we'll cover;</p>
+                    <p>ARR, Payback Period, NPV, Time value of money, Relevant Cost and Benefits, How to use these
+                        techniques, and the advantages and disadvantages of each.</p>
+                    <button class="table-of-contents-btn">Table of Contents</button>
+                    <div class="table-of-contents-content">
+                        <a href="#ARR">1. ARR</a>
+                        <a href="#payback">2. Payback Period</a>
+                        <a href="#NPV">3. NPV</a>
+                        <a href="#time-money">4. Time Value of Money</a>
+                        <a href="#relevant">5. Relevant Cost & Benefits</a>
+                        <a href="#how-to">6. How to Use these Techniques</a>
+                        <a href="#adv-dis">7. Advantages & Disadvantages</a>
+                    </div>
+                </div>
+                <div class="content-box" id="ARR">
+                    <h2>Accounting Rate of Return (ARR)</h2>
+                    <p>The Accounting Rate of Return, also known as Return on Investment (ROI),
+                        or Return on Capital Employed (ROCE), is the return in profits generated
+                        from the employment of capital.</p>
+                    <p>
+                        The aim is to determine how much per £ of capital invested was returned in profit.
+                        We calculate this with; Avg annual profits / Avg capital invested.
+                    </p>
+                    <p>
+                        This is where the avg profit is the accounting profit for the life of the project divided by the
+                        project length (in years).
+                        And where the avg capital invested would be the total amount of assets the company has tied up
+                        in the project - this is typically
+                        initial investment (or "investment at start") + investments at end divided by 2.
+                    </p>
+                    <p>
+                        <span class="info-wrapper">
+                            <span class="info-button" data-target="modal1" tabindex="0" role="button"
+                                aria-label="More Information">More Information</span>
+                        </span>
+                    </p>
+                    <div id="modal1" class="modal-overlay">
+                        <div class="modal-content">
+                            <button class="modal-close" aria-label="Close">&times;</button>
+                            <p>
+                                Initial investment is capital used at the start of the project, like machinery, plant etc.
+                                 And investment at end is the accumulation of capital employed throughout the period of the 
+                                 project, like receivables, inventory, cash/equivalents. This is why we add them both at the end of the project, then divide by avg accouting 
+                                 profit to get the ARR.
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        To make this simpler, I want us to consider the income statement and the balance sheet, and when
+                        we do, I want us to remember that
+                        our aim is to only include those that are relevant to the project itself, not the businesses as
+                        a whole.
+                    </p>
+                    <p>
+                        Looking at the income statement, we know that we have both cash and non-cash aspects, we also know we have income 
+                        and expenses as a result of the businesses main activities - providing products/services. However, we also have 
+                        those that are nothing to do with the main activies - for example, dividends from investing in other businesses, 
+                        royalties from owning patents, etc that other businesses are using (or that we're using - expense), and we obviously 
+                        can't forget the tax each year. This income - expenses gives us accounting profit (before interest and taxes).
+                    </p>
+                    <p>
+                        We need to take the same concept, but apply it specifically to the projects that we're on, not the business as a whole. 
+                        Therefore, we need to produce a cashflow statement that considers the income we anticipate, but also the expenses we anticpate, 
+                        which of course includes depreciation and amortisation of our non-current assets. Once we have this figure, we then divide by the 
+                        number of years in which the project is to last for - this gives is the avg accounting profit.
+                    </p>
+                    <p>
+                        And now onto the balance sheet, however, this is much simpler - in theory! Becuase we want to consider this from a capital point-of-view 
+                        and not a financing one, we only want to consider assets - not liabilities. The aim here is to determine what falls under initial, and what falls 
+                        under at end, or both. Non-current assets, like plant and machinery, vehicles for distribution etc, they will be within inital investment, however, 
+                        if we find ourselves purchasing new ones throughout the period of the project, they would be at end.
+                    </p>
+                    <p>
+                        Current assets are somewhat different, except inventory. When we start a project, we're likely going to have enough inventory to get us going, therefore, 
+                        the avg inventory we carry over will fall within initial investment, and inventory as we incur it through the period of the project, will be at end. The 
+                        is for cash/equivalents and others like receivables - we incur them as we go.
+                    </p>
+                    <p>
+                        Before we stop there, we also need to cover two small things - Inventory and Non-current Assets.
+                    </p>
+                    <p>
+                        When we look to add inventory to the initial investment figure, from a practical sense, if the project we're embarking on is no different to the main activites 
+                        of the business, we're most likely going to take some of all stages of the production process (RM, WIP and FG). Which makes the working for avg inventory at start 
+                        rather easy, however, with a twist for closing. We don't have closing yet becuase we haven't used consumed anything - however, as mentioned, we would have produced 
+                        a cashflow statement (and other budgets), which would state how much closing inventory we expect at period-end (assume 1st month). So we'd take the opening of each stage,
+                         add them together, and do the same for closing, and to work out the avg, we divide by 2. That's how we take something complex and make it simple.
+                    </p>
+                    <p>
+                        And lastly, non-current assets. If we have, let's say machinery, and there are two; one that we already have and are planning on utilising, and another we aim to purchase. 
+                        When it comes to the one we already have, we would not take the "at cost" over to the initial investment, instead we would take the NBV of the machinery at the time of employment to the project. 
+                        And for the one we plan on purchasing, it would be the "at cost" figure that we carry over - unless it is a lease, in which at cost and NBV is the same becuase the owner of the machinery is the one 
+                        handling the depreciation (or amortisation for intangible assets).
+                    </p>
+                    <p>
+                        For assets that we do own and utilise, if at the end of the project life we aim to sell, we would look to sell for above the NBV becuase anything less is an accounting loss - and in which case, maybe we 
+                        could utilise it on a different project, one of which it would run it term on.
+                    </p>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div class="content-box" id="payback">
+                    <h2>Payback Period</h2>
                     <p></p>
                 </div>
-                <div class="content-box">
-                    <div>
-                        <h1></h1>
-                        <p></p>
-                    </div>
+                <div class="content-box" id="NPV">
+                    <h2>NPV</h2>
+                    <p></p>
+                </div>
+                <div class="content-box" id="time-money">
+                    <h2>Time Value of Money</h2>
+                    <p></p>
+                </div>
+                <div class="content-box" id="relevant">
+                    <h2>Relevant Cost & Benefits</h2>
+                    <p></p>
+                </div>
+                <div class="content-box" id="how-to">
+                    <h2>How to Use these Techniques</h2>
+                    <p></p>
+                </div>
+                <div class="content-box" id="adv-dis">
+                    <h2>Advantages & Disadvantages</h2>
+                    <p></p>
                 </div>
             </div>
         </div>
     </div>
 
-<script src="CFM.js"></script>
+    <script src="CFM.js"></script>
 </body>
+
 </html>

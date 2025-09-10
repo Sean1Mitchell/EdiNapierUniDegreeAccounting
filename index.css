@@ -139,14 +139,6 @@ body.sidebar-open {
     display: block;
 }
 
-.content-box {
-    max-width: 100%;
-    margin: 20px auto;
-    border: 1px solid white;
-    border-radius: 15px;
-    padding: 15px;
-}
-
 .content-box-intro {
     max-width: 100%;
     margin: 20px auto;
