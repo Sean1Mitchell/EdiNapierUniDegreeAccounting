@@ -149,7 +149,6 @@ body.sidebar-open {
     scroll-margin-top: 70px;
 }
 
-/*       This is for the table of contents                 */
 .table-of-contents-content {
     display: none;
     margin-top: 10px;
@@ -161,7 +160,6 @@ body.sidebar-open {
     justify-self: center;
 }
 
-/* Style links */
 .table-of-contents-content a {
     display: block;
     margin: 5px 0;
@@ -189,7 +187,6 @@ body.sidebar-open {
 .table-of-contents-btn:hover {
     background: var(--accent-clr);
 }
-/*       This is for the table of contents                 */
 
 h1 {
     text-align: center;
@@ -233,6 +230,30 @@ p {
     padding: 3px;
     border: 1px solid var(--accent-clr);
     white-space: nowrap;
+}
+
+.content-table-payback {
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: auto;
+    width: 60%;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.content-table-payback thead tr {
+    background-color: var(--accent-clr);
+    color: black;
+}
+
+.content-table-payback th, .content-table-payback td {
+    padding: 3px;
+    border: 1px solid var(--accent-clr);
+    white-space: nowrap;
+}
+
+.payback-table-alternative {
+    display: flex;
 }
 
 .table-of-contents-content {
@@ -479,6 +500,27 @@ p {
         white-space: normal;
     }
 
+    .content-table-payback {
+        text-align: center;
+        border-collapse: collapse;
+        table-layout: auto;
+        font-size: 14px;
+    }
+
+    .content-table-payback thead tr {
+        background-color: var(--accent-clr);
+    }
+
+    .content-table-payback th, .content-table-payback td {
+        padding: 3px;
+        border: 1px solid var(--accent-clr);
+        white-space: normal;
+    }
+
+    .payback-table-alternative {
+        display: none;
+    }
+
     .table-of-contents-btn {
         font-size: 14px;
     }
@@ -540,6 +582,27 @@ p {
         white-space: normal;
     }
 
+    .content-table-payback {
+        text-align: center;
+        border-collapse: collapse;
+        table-layout: auto;
+        font-size: 14px;
+    }
+
+    .content-table-payback thead tr {
+        background-color: var(--accent-clr);
+    }
+
+    .content-table-payback th, .content-table-payback td {
+        padding: 3px;
+        border: 1px solid var(--accent-clr);
+        white-space: normal;
+    }
+
+    .payback-table-alternative {
+        display: none;
+    }
+
     .table-of-contents-btn {
         font-size: 14px;
     }
@@ -594,6 +657,28 @@ p {
         padding: 3px;
         border: 1px solid var(--accent-clr);
         white-space: normal;
+    }
+
+    .content-table-payback {
+        display: none;
+        text-align: center;
+        border-collapse: collapse;
+        table-layout: auto;
+        font-size: 14px;
+    }
+
+    .content-table-payback thead tr {
+        background-color: var(--accent-clr);
+    }
+
+    .content-table-payback th, .content-table-payback td {
+        padding: 3px;
+        border: 1px solid var(--accent-clr);
+        white-space: normal;
+    }
+
+    .payback-table-alternative {
+        display: block;
     }
 
     .info-box {
@@ -659,6 +744,27 @@ p {
         padding: 3px;
         border: 1px solid var(--accent-clr);
         white-space: normal;
+    }
+
+    .content-table-payback {
+        text-align: center;
+        border-collapse: collapse;
+        table-layout: auto;
+        font-size: 14px;
+    }
+
+    .content-table-payback thead tr {
+        background-color: var(--accent-clr);
+    }
+
+    .content-table-payback th, .content-table-payback td {
+        padding: 3px;
+        border: 1px solid var(--accent-clr);
+        white-space: normal;
+    }
+
+    .payback-table-alternative {
+        display: block;
     }
 
     .info-box {
