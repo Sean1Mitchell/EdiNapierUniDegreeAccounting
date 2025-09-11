@@ -326,7 +326,142 @@
                 </div>
                 <div class="content-box" id="NPV">
                     <h2>NPV</h2>
-                    <p></p>
+                    <p>
+                        In Packback, we mentioned it’s disadvantages, and to overcome them we implement techniques like Net Present Value (NPV). These techniques are known as Discounted Cash Flow (DCF), and NPV is just one of them that we use.
+                    </p>
+                    <p>
+                        We use DCF’s to reduce the cash flows within a project to represent the time value of money. We do this using the firm's cost of capital and deducting capital outlay.
+                    </p>
+                    <p>
+                        NPV is the present value of future cash flows less the cost of the initial investment. A positive NPV can be accepted, whereas a negative NPV should be rejected as the return does not exceed the required rate of return – i.e., the lost capital. This is great if we have several projects to choose from, we can rank NPV in order from most positive to most negative.
+                    </p>
+                    <p>
+                        For example, say we have between Project A and Project B;
+                    </p>
+                    <table class="content-table-NPV">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Cashflow</th>
+                                <th>Discount Factor</th>
+                                <th>Present Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>300</td>
+                                <td>0.9091</td>
+                                <td>272.73</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>1000</td>
+                                <td>0.8264</td>
+                                <td>826.40</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>400</td>
+                                <td>0.7513</td>
+                                <td>300.52</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1,399.65</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Initial Investment ></td>
+                                <td>-1,000</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>NPV ></td>
+                                <td>399.65</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="content-table-NPV">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Cashflow</th>
+                                <th>Discount Factor</th>
+                                <th>Present Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>600</td>
+                                <td>0.9091</td>
+                                <td>545.46</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>600</td>
+                                <td>0.8264</td>
+                                <td>495.84</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>600</td>
+                                <td>0.7513</td>
+                                <td>450.78</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1,492.08</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Initial Investment ></td>
+                                <td>-1,000</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>NPV ></td>
+                                <td>492.08</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="NPV-table-alternative">
+                        <p>
+                            Project A has the following cashflows; year 1 – 300, year 2 – 1,000, and year 3 – 400. Project B has the following cashflows; year 1 – 600, year 2 – 600, and year 3 – 600. Both require an immediate initial investment of 1,000 and the cost of capital (required rate of return) is 10%.
+                        </p>
+                        <p>
+                            At a 10% cost of capital discount factor, that is 0.9091 in year 1, 0.8264 in year 2, and 0.7513 in year 4 (for both A and B). We then multiply the cashflow per year and discount factor, and add them together, subtracting the initial investment;
+                        </p>
+                        <p>
+                            <b><u>Project A</u></b> (300 * 0.9091) + (1000 * 0.8264) + (400 * 0.7513) - 1000 = 399 (rounded down).
+                        </p>
+                        <p>
+                            <b><u>Project B</u></b> (600 * 0.9091) + (600 * 0.8264) + (600 * 0.7513) - 1000 = 492 (rounded down).
+                        </p>
+                    </div>
+                    <p>
+                        (As mentioned previously, you can download the exercise to see this in action).
+                    </p>
+                    <p>
+                        Both projects are positive, so could do either, but as we need to choose between them both, we’d choose Project B as it offers a higher positive NPV. However, we also need to consider risk, uncertainty of future cash flows, and are both sets of cash flows equally likely to be realised.
+                    </p>
+                    <p><b><u>Disadvantages</u></b></p>
+                    <p>
+                        Disadvantages of NPV include its heavy dependence on the discount rate being used. However, IRR can make up the difference, because IRR is the discount rate that makes NPV = 0. In other words, the IRR tells us the effective return of the project, meaning we don’t need to determine the cost of capital (the discount rate). That being said, NPV also takes more work than both Payback and ARR, so these techniques can be used at first to filter poor project, then be used for more detail.
+                    </p>
+                    <p><b><u>Key Notes</u></b></p>
+                    <p>
+                        It recognises that £1 today is worth more than £1 tomorrow. That if all projects can be accepted (i.e., no mutual exclusivity) it maximises shareholder utility. Projects with a positive NPV should be accepted since they increase shareholder wealth, while those with negative NPV’s decrease shareholder wealth. It also takes into account investment size – absolute amount of wealth change. It is not as intuitively understandable as a percentage measure. It can handle non-conventional cash flows. Additivity is possible because present values are all measured in today's £s they can be added together. Thus, the returns (NPVs) of a group projects can be calculated. And lastly, it assumes that cash inflows arising during the life of a project are reinvested at the opportunity cost of capital – a reasonable assumption.
+                    </p>
                 </div>
                 <div class="content-box" id="time-money">
                     <h2>Time Value of Money</h2>
