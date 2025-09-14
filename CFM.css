@@ -232,51 +232,7 @@ p {
     white-space: nowrap;
 }
 
-.content-table-payback {
-    text-align: center;
-    border-collapse: collapse;
-    table-layout: auto;
-    width: 60%;
-    font-size: 16px;
-    margin: 0 auto;
-}
-
-.content-table-payback thead tr {
-    background-color: var(--accent-clr);
-    color: black;
-}
-
-.content-table-payback th, .content-table-payback td {
-    padding: 3px;
-    border: 1px solid var(--accent-clr);
-    white-space: nowrap;
-}
-
-.payback-table-alternative {
-    display: block;
-}
-
-.content-table-NPV {
-    text-align: center;
-    border-collapse: collapse;
-    table-layout: auto;
-    width: 60%;
-    font-size: 16px;
-    margin: 0 auto;
-}
-
-.content-table-NPV thead tr {
-    background-color: var(--accent-clr);
-    color: black;
-}
-
-.content-table-NPV th, .content-table-NPV td {
-    padding: 3px;
-    border: 1px solid var(--accent-clr);
-    white-space: nowrap;
-}
-
-.NPV-table-alternative {
+.content-table-alternative {
     display: block;
 }
 
@@ -516,6 +472,7 @@ p {
 
     .content-table thead tr {
         background-color: var(--accent-clr);
+        color: black;
     }
 
     .content-table th, .content-table td {
@@ -524,45 +481,7 @@ p {
         white-space: normal;
     }
 
-    .content-table-payback {
-        text-align: center;
-        border-collapse: collapse;
-        table-layout: auto;
-        font-size: 14px;
-    }
-
-    .content-table-payback thead tr {
-        background-color: var(--accent-clr);
-    }
-
-    .content-table-payback th, .content-table-payback td {
-        padding: 3px;
-        border: 1px solid var(--accent-clr);
-        white-space: normal;
-    }
-
-    .payback-table-alternative {
-        display: none;
-    }
-
-    .content-table-NPV {
-        text-align: center;
-        border-collapse: collapse;
-        table-layout: auto;
-        font-size: 14px;
-    }
-
-    .content-table-NPV thead tr {
-        background-color: var(--accent-clr);
-    }
-
-    .content-table-NPV th, .content-table-NPV td {
-        padding: 3px;
-        border: 1px solid var(--accent-clr);
-        white-space: normal;
-    }
-
-    .NPV-table-alternative {
+    .content-table-alternative {
         display: none;
     }
 
@@ -619,6 +538,7 @@ p {
 
     .content-table thead tr {
         background-color: var(--accent-clr);
+        color: black;
     }
 
     .content-table th, .content-table td {
@@ -627,45 +547,7 @@ p {
         white-space: normal;
     }
 
-    .content-table-payback {
-        text-align: center;
-        border-collapse: collapse;
-        table-layout: auto;
-        font-size: 14px;
-    }
-
-    .content-table-payback thead tr {
-        background-color: var(--accent-clr);
-    }
-
-    .content-table-payback th, .content-table-payback td {
-        padding: 3px;
-        border: 1px solid var(--accent-clr);
-        white-space: normal;
-    }
-
-    .payback-table-alternative {
-        display: none;
-    }
-
-    .content-table-NPV {
-        text-align: center;
-        border-collapse: collapse;
-        table-layout: auto;
-        font-size: 14px;
-    }
-
-    .content-table-NPV thead tr {
-        background-color: var(--accent-clr);
-    }
-
-    .content-table-NPV th, .content-table-NPV td {
-        padding: 3px;
-        border: 1px solid var(--accent-clr);
-        white-space: normal;
-    }
-
-    .NPV-table-alternative {
+    .content-table-alternative {
         display: none;
     }
 
@@ -709,6 +591,7 @@ p {
     }
 
     .content-table {
+        display: none;
         text-align: center;
         border-collapse: collapse;
         table-layout: auto;
@@ -717,6 +600,7 @@ p {
 
     .content-table thead tr {
         background-color: var(--accent-clr);
+        color: black;
     }
 
     .content-table th, .content-table td {
@@ -725,47 +609,7 @@ p {
         white-space: normal;
     }
 
-    .content-table-payback {
-        display: none;
-        text-align: center;
-        border-collapse: collapse;
-        table-layout: auto;
-        font-size: 14px;
-    }
-
-    .content-table-payback thead tr {
-        background-color: var(--accent-clr);
-    }
-
-    .content-table-payback th, .content-table-payback td {
-        padding: 3px;
-        border: 1px solid var(--accent-clr);
-        white-space: normal;
-    }
-
-    .payback-table-alternative {
-        display: block;
-    }
-
-    .content-table-NPV {
-        display: none;
-        text-align: center;
-        border-collapse: collapse;
-        table-layout: auto;
-        font-size: 14px;
-    }
-
-    .content-table-NPV thead tr {
-        background-color: var(--accent-clr);
-    }
-
-    .content-table-NPV th, .content-table-NPV td {
-        padding: 3px;
-        border: 1px solid var(--accent-clr);
-        white-space: normal;
-    }
-
-    .NPV-table-alternative {
+    .content-table-alternative {
         display: block;
     }
 
@@ -818,6 +662,7 @@ p {
     }
 
     .content-table {
+        display: none;
         text-align: center;
         border-collapse: collapse;
         table-layout: auto;
@@ -826,6 +671,7 @@ p {
 
     .content-table thead tr {
         background-color: var(--accent-clr);
+        color: black;
     }
 
     .content-table th, .content-table td {
@@ -834,47 +680,7 @@ p {
         white-space: normal;
     }
 
-    .content-table-payback {
-        display: none;
-        text-align: center;
-        border-collapse: collapse;
-        table-layout: auto;
-        font-size: 14px;
-    }
-
-    .content-table-payback thead tr {
-        background-color: var(--accent-clr);
-    }
-
-    .content-table-payback th, .content-table-payback td {
-        padding: 3px;
-        border: 1px solid var(--accent-clr);
-        white-space: normal;
-    }
-
-    .payback-table-alternative {
-        display: block;
-    }
-
-    .content-table-NPV {
-        display: none;
-        text-align: center;
-        border-collapse: collapse;
-        table-layout: auto;
-        font-size: 14px;
-    }
-
-    .content-table-NPV thead tr {
-        background-color: var(--accent-clr);
-    }
-
-    .content-table-NPV th, .content-table-NPV td {
-        padding: 3px;
-        border: 1px solid var(--accent-clr);
-        white-space: normal;
-    }
-
-    .NPV-table-alternative {
+    .content-table-alternative {
         display: block;
     }
 
