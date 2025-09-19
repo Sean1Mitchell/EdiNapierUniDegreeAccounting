@@ -163,8 +163,8 @@ h1, h2, h3, p {
 
 h1 {font-size: 30px;}
 h2 {font-size: 28px;}
-h3 {font-size: 25px;}
-p {font-size: 20px;}
+h3 {font-size: 23px;}
+p {font-size: 18px;}
 
 /* Fix for ul and ol styling - properly centered and responsive */
 .content-box ul,
@@ -191,7 +191,7 @@ p {font-size: 20px;}
   margin: clamp(6px, 1.5vw, 12px) 0;
   line-height: 1.5;
   text-align: left;
-  font-size: inherit;
+  font-size: 18px;
 }
 
 .content-box,
@@ -424,9 +424,10 @@ p {font-size: 20px;}
   .content-section {
     display: block;
     font-size: larger;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
+
 }
 
 @media (max-width: 768px) {
