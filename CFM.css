@@ -155,6 +155,10 @@ body.sidebar-open {
   scroll-margin-top: calc(var(--header-height) + 10px);
 }
 
+.content-box [id] {
+  scroll-margin-top: calc(var(--header-height) + 10px);
+}
+
 /* Typography */
 h1, h2, h3, p {
   text-align: center;
@@ -163,8 +167,8 @@ h1, h2, h3, p {
 
 h1 {font-size: 30px;}
 h2 {font-size: 28px;}
-h3 {font-size: 23px;}
-p {font-size: 18px;}
+h3 {font-size: 25px;}
+p {font-size: 20px;}
 
 /* Fix for ul and ol styling - properly centered and responsive */
 .content-box ul,
@@ -191,7 +195,7 @@ p {font-size: 18px;}
   margin: clamp(6px, 1.5vw, 12px) 0;
   line-height: 1.5;
   text-align: left;
-  font-size: 18px;
+  font-size: inherit;
 }
 
 .content-box,
@@ -265,7 +269,7 @@ p {font-size: 18px;}
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: clamp(14px, 2vw, 20px);
   transition: color 0.2s ease;
   font-size: 15px;
 }
@@ -273,6 +277,37 @@ p {font-size: 18px;}
 .table-of-contents-content a:hover {
   color: var(--accent-clr);
 }
+
+.toc-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 12px 15px;
+  background: none;
+  border: none;
+  color: var(--text-clr);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px solid var(--line-clr);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.toc-btn:hover {
+  background-color: var(--accent-clr);
+  color: black; /* matches .sidebar-btn hover */
+}
+
+.toc-dropdown {
+  display: none;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.toc-dropdown.show {
+  display: block;
+}
+
 
 /* Info components */
 .info-wrapper {
@@ -424,10 +459,9 @@ p {font-size: 18px;}
   .content-section {
     display: block;
     font-size: larger;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -446,6 +480,11 @@ p {font-size: 18px;}
   .content-box {
     margin: 15px auto;
     padding: 12px;
+  }
+
+  .content-box ul,
+  .content-box ol {
+    font-size: 16px;
   }
 
   h1 {font-size: 20px;}
@@ -475,6 +514,7 @@ p {font-size: 18px;}
   .content-box ul,
   .content-box ol {
     padding-left: 1.5rem;
+    font-size: 14px;
   }
 
   h1 {font-size: 20px;}
