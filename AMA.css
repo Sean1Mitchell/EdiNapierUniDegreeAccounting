@@ -548,8 +548,8 @@ p {font-size: 20px;}
   p {font-size: 14px;}
 
   #progress {
-    height: 10px;
-    width: 10px;
+    height: 50px;
+    width: 50px;
   }
 
   #progress-value {
