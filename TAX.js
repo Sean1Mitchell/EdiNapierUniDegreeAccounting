@@ -173,4 +173,34 @@ tocDropdowns.forEach((dropdown) => {
   });
 });
 
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+        document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+
+    // Show/hide button after 100px
+    if (pos > 100) {
+        scrollProgress.style.display = "grid";
+    } else {
+        scrollProgress.style.display = "none";
+    }
+
+    // Update circle background only (arrow stays)
+    scrollProgress.style.background = `conic-gradient(#5e63ff ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+
+    // Scroll back to top smoothly
+    scrollProgress.onclick = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+
 });
