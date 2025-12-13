@@ -110,11 +110,124 @@
             <div class="content-section">
                 <div class="content-box-intro">
                     <h1>Cost of Equity (DVM & CAPM)</h1>
+
+                    <button class="table-of-contents-btn">Table of Contents</button>
+                    <div class="table-of-contents-content">
+                        <a href="#introduction" class="toc-btn">Introduction</a>
+
+                        <a href="#dividendvaluationmodel" class="toc-btn">Dividend Valuation Model (DVM)</a>
+
+                        <a href="#capitalassetpricingmodel" class="toc-btn">Capital Asset Pricing Model (CAPM)</a>
+                    </div>
                 </div>
-                <div class="content-box">
+                <div class="content-box" id="introduction">
                     <div>
-                        <h1></h1>
-                        <p></p>
+                        <h1>Introduction</h1>
+                        <p>The cost of equity (Ke), also referred to as the required rate of return, represents the return that equity investors require to compensate them for the risk they undertake by investing in a company. It is the return that must be offered to retain existing shareholders and attract new equity finance, encouraging investors to buy and hold the company’s shares.</p>
+                        <p>Finance providers expect to be adequately rewarded for the risk they bear. Unlike debt holders, equity investors have no guaranteed return, making equity inherently riskier and therefore requiring a higher rate of return. This contrasts with low-risk investments such as UK government bonds (gilts), where investors accept lower returns due to minimal risk.</p>
+                        <p>The cost of equity is forward-looking and represents the opportunity cost of funds, not a historical measure. It plays a critical role in financial decision-making.</p>
+                        <p>Risk and return are directly related: the higher the risk, the higher the required rate of return. Therefore, accurately estimating Ke is essential. Two commonly used methods to estimate the cost of equity are:</p>
+                        <ol>
+                            <li>The Dividend Valuation Model (DVM).</li>
+                            <li>The Capital Asset Pricing Model (CAPM).</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="content-box" id="dividendvaluationmodel">
+                    <div>
+                        <h1>Dividend Valuation Method (DVM)</h1>
+                        <p>The Dividend Valuation Model estimates the cost of equity based on expected dividends and growth. The formula is: Ke = Do x (1 + g) / Po + g.</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>Do = Current Dividends.</li>
+                            <li>g = Constant Growth Rate of Dividends.</li>
+                            <li>Po = Current Share Price (excl. dividends).</li>
+                        </ul>
+                        <p><u>For example:</u></p>
+                        <p>A company’s shares are trading at £20 in the capital market (excluding dividends). The dividend expected next year is £1.40 per share, and dividends are expected to grow at 5% per annum.</p>
+                        <p>Ke = Do x (1 + g) / Po + g</p>
+                        <p>Ke = 1.40 x (1 + 0.05) / 20 + 0.05</p>
+                        <p>Ke = 0.12 (or 12%).</p>
+                    </div>
+                </div>
+                <div class="content-box" id="capitalassetpricingmodel">
+                    <div>
+                        <h1>Capital Asset Pricing Model (CAPM)</h1>
+                        <p>The CAPM estimates the cost of equity by explicitly adjusting for systematic (market) risk. The model assumes that investors hold diversified portfolios, meaning unsystematic risk can be eliminated through diversification. As a result, investors are only rewarded for systematic risk, which is measured using Beta (β).</p>
+                        <p>The formula is: Ke = Rf + B x (Rm - Rf).</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>Rf = Risk-Free Rate of Return.</li>
+                            <li>Rm = Expected Market Return.</li>
+                            <li>(Rm - Rf) = Equity Risk Premium.</li>
+                            <li>Beta = Measure of Systematic Risk.</li>
+                        </ul>
+                        <p><u>For example:</u></p>
+                        <p>Let's assume we have a risk-free rate of 4.2%, beta of 1.3, and an expected market return of 9%:</p>
+                        <p>Ke = Rf + B x (Rm - Rf).</p>
+                        <p>Ke = 4.2 + 1.3 x (9 - 4.2).</p>
+                        <p>Ke = 10.44 (or 10.44%).</p>
+
+                        <p>Note that there are two types of risk:</p>
+                        <ul>
+                            <li>Systematic Risk: (undiversifiable) these are things that affect all firms, like inflation, interest rates, etc.</li>
+                            <li>Unsystematic Risk: (diversifiable) these are things that are firm-specific, lile labour disputes, supply chain issues, etc.</li>
+                        </ul>
+                        <p>Since unsystematic risk can be diversified away, only systematic risk is rewarded, which is why CAPM uses Beta.</p>
+                        <p>Beta measures how sensitive a company's returns are relative to movements in the maket.</p>
+                        <p>A beta of:</p>
+                        <ul>
+                            <li>1 = move in line with the market.</li>
+                            <li>over 1 = more volatile than the market.</li>
+                            <li>under 1 = less volatile than the market.</li>
+                        </ul>
+                        <p>A beta of 1.2, for example, implies a 1% change in the market return, leads to a 1.2% change in the company's returns.</p>
+                        <p>Let's assume we need to work it out manually:</p>
+                        <p>Over a 5 month period we see the following:</p>
+                        <ul>
+                            <li>Month 1: Share Return of 3, Market Return of 2</li>
+                            <li>Month 2: Share Return of 5, Market Return of 4</li>
+                            <li>Month 3: Share Return of -2, Market Return of -1</li>
+                            <li>Month 4: Share Return of 4, Market Return of 3</li>
+                            <li>Month 5: Share Return of 1, Market Return of 0</li>
+                        </ul>
+                        <p>We then follow a 5 step process to get Beta:</p>
+                        <p>Step 1: Calculate the averages of both: (i.e., sum them up).</p>
+                        <ul>
+                            <li>Share Return: 11 / 5 = 2.2%</li>
+                            <li>Market Return: 8 / 5 = 1.6%</li>
+                        </ul>
+                        <p>Step 2: Find the deviations from the mean:</p>
+                        <ul>
+                            <li>Month 1: Share Return of 3 - 2.2 = 0.8, Market Return of 2 - 1.6 = 0.4</li>
+                            <li>Month 2: Share Return of 5 - 2.2 = 2.8, Market Return of 4 - 1.6 = 2.4</li>
+                            <li>Month 3: Share Return of -2 - 2.2 = -4.2, Market Return of -1 - 1.6 = -2.6</li>
+                            <li>Month 4: Share Return of 4 - 2.2 = 1.8, Market Return of 3 - 1.6 = 1.4</li>
+                            <li>Month 5: Share Return of 1 - 2.2 = -1.2, Market Return of 0 - 1.6 = -1.6</li>
+                        </ul>
+                        <p>Step 3: Find the Covariance:</p>
+                        <ul>
+                            <li>Month 1: 0.8 x 0.4 = 0.32</li>
+                            <li>Month 2: 2.8 x 2.4 = 6.72</li>
+                            <li>Month 3: -4.2 x -2.6 = 10.92</li>
+                            <li>Month 4: 1.8 x 1.4 = 2.52</li>
+                            <li>Month 5: 1.2 x -1.6 = 1.92</li>
+                            <li>Sum: 22.4 / (5 - 1) = 5.6</li>
+                        </ul>
+                        <p>Step 4: Find the Market Variance:</p>
+                        <ul>
+                            <li>Month 1: (0.4)^2 = 0.16</li>
+                            <li>Month 2: (2.4)^2 = 5.76</li>
+                            <li>Month 3: (-2.6)^2 = 6.76</li>
+                            <li>Month 4: (1.4)^2 = 1.96</li>
+                            <li>Month 5: (-1.6)^2 = 2.56</li>
+                            <li>Sum: 17.2 / (5 - 1) = 4.3</li>
+                        </ul>
+                        <p>Step 5: Find Beta:</p>
+                        <ul>
+                            <li>5.6 / 4.3 = 1.30</li>
+                        </ul>
+                        <p>Therefore, a 1% change in the markets return, leads to a 1.30% change in the company’s return.</p>
                     </div>
                 </div>
             </div>

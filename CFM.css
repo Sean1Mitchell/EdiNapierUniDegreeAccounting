@@ -184,7 +184,7 @@ p {font-size: 18px;}
   text-align: left;
   margin: 10px auto;
   padding-left: clamp(1.5rem, 3vw, 2.5rem);
-  font-size: clamp(14px, 2.2vw, 20px);
+  font-size: 18px;
   list-style-position: outside;
   max-width: clamp(300px, 90%, 800px);
 }
@@ -553,6 +553,11 @@ a.toc-btn {
     padding: 12px;
   }
 
+  .content-box-1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .content-box ul,
   .content-box ol {
     font-size: 16px;
@@ -588,14 +593,19 @@ a.toc-btn {
     font-size: 14px;
   }
 
+  .content-box-1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
   h1 {font-size: 20px;}
   h2 {font-size: 18px;}
   h3 {font-size: 16px;}
   p {font-size: 14px;}
 
   #progress {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
   }
 
 }
