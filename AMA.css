@@ -159,6 +159,13 @@ body.sidebar-open {
   scroll-margin-top: calc(var(--header-height) + 10px);
 }
 
+.content-box-1 {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Typography */
 h1, h2, h3, p {
   text-align: center;
@@ -249,6 +256,33 @@ p {font-size: 20px;}
   background: var(--accent-clr);
 }
 
+.previous-next-page-btn {
+  display: inline;
+  padding: 8px 12px;
+  border: var(--accent-clr) 0.125em solid;
+  border-radius: 6px;
+  background: var(--hover-clr);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.previous-next-page-btn {
+  height: 40px;
+  width: 150px;
+  margin: 10px auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px rgba(94, 99, 255, 0.3);
+}
+
+.previous-next-page-btn:hover {
+  background: var(--accent-clr);
+}
+
 /* Table of contents content */
 .table-of-contents-content {
   display: none;
@@ -260,21 +294,6 @@ p {font-size: 20px;}
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-}
-
-.table-of-contents-content a {
-  display: block;
-  margin: 5px 0;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: clamp(14px, 2vw, 20px);
-  transition: color 0.2s ease;
-  font-size: 15px;
-}
-
-.table-of-contents-content a:hover {
-  color: var(--accent-clr);
 }
 
 .toc-btn {
@@ -290,12 +309,26 @@ p {font-size: 20px;}
   cursor: pointer;
   border-bottom: 1px solid var(--line-clr);
   border-top: 1px solid var(--line-clr);
+  text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.table-of-contents-content .toc-btn:hover {
+  background-color: var(--accent-clr);
+  color: black;
+}
+
+a.toc-btn {
+  color: inherit;
+}
+
+.toc-btn:link, .toc-btn:visited {
+  color: var(--text-clr);
 }
 
 .toc-btn:hover {
   background-color: var(--accent-clr);
-  color: black; /* matches .sidebar-btn hover */
+  color: black;
 }
 
 .toc-dropdown {
@@ -307,6 +340,21 @@ p {font-size: 20px;}
 .toc-dropdown.show {
   display: block;
 }
+
+.toc-dropdown a {
+  display: block;
+  padding: 8px 15px 8px 30px;
+  text-decoration: none;
+  color: var(--secondary-text-clr);
+  font-size: 14px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.toc-dropdown a:hover {
+  color: var(--accent-clr);
+  background-color: var(--hover-clr);
+}
+
 
 
 /* Info components */

@@ -103,15 +103,88 @@
             </div>
         </div>
 
+        <div id="progress">
+            <span id="progress-value">&#x1F815;</span>
+        </div>
+
         <div class="main-content">
             <div class="content-section">
                 <div class="content-box-intro">
                     <h1>Shareholder Wealth & Company Valuation</h1>
+
+                    <button class="table-of-contents-btn">Table of Contents</button>
+                    <div class="table-of-contents-content">
+                        <a href="#introduction" class="toc-btn">Introduction</a>
+
+                        <a href="#introduction" class="toc-btn">Company Valuation - Assets</a>
+
+                        <button class="toc-btn">Company Valuation - Income</button>
+                        <div class="toc-dropdown">
+                            <a href="#dividendvaluationmodel">1.Dividend Valuation Model (DVM)</a>
+                            <a href="#panderatiomodel">2.P/E Ratio Model</a>
+                            <a href="#cashflowmodel">3.Cash Flow Model</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="content-box">
+                <div class="content-box" id="introduction">
                     <div>
-                        <h1></h1>
-                        <p></p>
+                        <h1>Introduction</h1>
+                        <p>The aim is to maximise shareholder wealth, and this is something we need to keep in mind as we go through this section.</p>
+                        <p>There are 4 inputs that determine the creation of value. This is the amount of capital invested, the required rate of return, the actual rate of return, and the planning horizon. The formula is capital invested x (actual return – required return) = either value created, or value lost, and the planning horizon is the planning behind being able to consistently make a return that is over the required rate of return.</p>
+                        <p>In order to create value, we need to consider 5 areas: Increasing the return on existing capital, raising the investment in positive spread units, divest assets from negative spread units to release capital for more productive use, expand the planning horizon, and lower the required rate of return.</p>
+                        <p> There are two methods of valuing the creation of shareholder wealth: Assets and Income.</p>
+                    </div>
+                </div>
+                <div class="content-box" id="companyvaluation-assets">
+                    <div>
+                        <h1>Company Valuation - Assets</h1>
+                        <p>Valuation via assets looks at NAV – Net Asset Value. Where the value of shares is equal to the net “tangible” assets of a business divided by the number of ordinary shares. The aim here is to determine the going concern valuations and break up valuations.</p>
+                        <p>NAV is where we take the total assets, subtract total liabilities, giving us total net assets, then we divide by the number of ordinary shares in issue – this gives us the NAV value of the firm.</p>
+                        <p>There are some complications with NAV valuation is: Establishing accurate asset values – where bad debts can be included in receivables, inventory may include obsolescence, poor depreciation policies showing improper wear and tear. Intangibles – patents, licenses, goodwill that are incredibly difficult to value. Contingent assets and liabilities – will they crystalise. Off balance sheet items – joint ventures, hiding significant assets or risks. (useful technique in certain circumstances)</p>
+                    </div>
+                </div>
+                <div class="content-box" id="companyvaluation-income">
+                    <div>
+                        <h1>Company Valuation - Income</h1>
+                        <p>Valuation via income focuses on three areas: Dividend Model, P/E Model, and Cashflow Model.</p>
+                        <br>
+                        <p id="dividendvaluationmodel"><b>Dividend Valuation Model (DVM)</b></p>
+                        <p>The Dividend Valuation Model (DVM) is where an individual shareholder is expecting two types of returns: Income from dividends, and capital gains (this is based on expected future dividends). Investors will discount this back to a present value using their required rate of return (also known as Ke).</p>
+                        <p>There are some layers to this, and they need to be considered before we jump into calculations. For one, there are two kinds of dividends that we see in terms of this model: Constant Dividends, and Growth Dividends. Constant dividends are when the dividends paid remain the same with no growth, and growth dividends is when the dividends paid are expected to grow year to year, therefore, the formula that we use are different depending on which we’re focused on.</p>
+                        <p>For constant dividends, the formula is a simple one where Do (dividend paid) is divided by Ke (required rate of return). For example, a Do of 10p and Ke of 11%, Po (expected dividend) is 10/0.11 = 90 (or £.90) per share.</p>
+                        <p>For growth dividends, the formula is a more complex. Not only do we consider the addition of growth the formula for constant dividends, but it also tells us more, about the change in dividends year to year, the change in share price year to year, as well as the intrinsic value from year to year. Therefore, the formula includes Do, Ke, but also g (for growth). So, let’s say we have Do of 10p, Ke of 11%, and g of 7%.</p>
+                        <p>Year to year calculation for growth dividends are as follows: 10(1+0.07) = 10.70p, and each year we add ^ then the respective year, for example, year 2 is: 10(1+0.07) ^2 = 11.45p, and so on. This is the year-to-year growth of dividends.</p>
+                        <p>However, we also need to account for what the present value of those shares are to account for the opportunity cost forgone by having shares in this firm, or more, rather than investing elsewhere. Therefore, the formula to determine the dividend of 10.70p is: 10*(1+0.07) / (1+0.11) = 964 (or £9.46). Again, we add ^ for each respective year thereafter, for example, year 2 is: 10*(1+0.07) ^2 / (1+0.11) ^2 = 929 (or £9.29). This is the present value of the future dividend.</p>
+                        <p>The last thing is the share price. If we do: 10 / (0.11-0.07) = 267.50 (or £2.76) we get what we assume will be the share price in the future if we see a growth of 7%. However, it’s worth noting that the market does not determine the share price based on growth, instead the market is ruled by emotions dictated by information, fear/hype, and interpretation, therefore, it is highly unlikely that the share price will reflect any calculations or formulas we do to determine it.</p>
+                        <p>The dividend valuation method is limited and is based on several assumptions that rarely are true. The DVM considers that only dividends are a form of return, not capital gains, not retained earnings, or even share buybacks, meaning that a lot of value is not being considered. The modal, as suggested above, assumes constant growth – of which there really is no way to predict this. Changes in either g or Ke has dramatic differences, making it unstable if inputs are not certain. DVM also ignores market behaviour, and it assumes perpetual growth (i.e., the company last forever).</p>
+                        <p>There are 4 ways in which we’ll look at for forecasting dividend growth rate: Historical, Retention, and Earnings.</p>
+                        <p>Historical is the most commonly used way, and it’s also the easiest to use. This is where we review the historical growth of the firm and assume it will continue. For example, if dividends rose from 10p to 14p within a 5-year period: ((14/10) ^ (1/5))-1 = 0.06961 (or 6.96%). This is good for mature and stable companies, but assumes unchanged growth, which is significantly unrealistic.</p>
+                        <p>Retention links dividends with retained earnings and profits reinvested. For example, let’s say the company retains 40% of it’s profits, and earns 12% on equity: (0.4*0.12) = 0.048 (or 4.8%). This is good for companies with clear and stable profit reinvestment policies but assumes payout ratio and ROE stays constant.</p>
+                        <p>Earnings is the link between earnings and dividends with them being paid from earnings, therefore, we can assume the same growth rate. So, if a company’s EPS has risen by 6% per year, we can assume the dividend growth will be on par with it. This is good for companies with stead payout rations but assumes that EPS and dividends move together – this is not always the case.</p>
+                        <p>The fundamentals to consider is to focus on the firm, the financial accounts, and the economy, alongside the company’s position within it. This helps us target: the strategic analysis and horizon planning, evaluation of managements strengths, using the historical growth rates of dividends, ratio analysis and evaluation of the financial statements – they are based on historical, and can occur again, the fundamental value-creating processes within the firm are not identified and measured in conventional accounts based on historic cost and accruals concepts, and they include estimates and judgements.</p>
+                        <br>
+                        <p id="panderatiomodel"><b>P/E Ratio Model</b></p>
+                        <p>The P/E (Price-to-Earnings) ratio consists of the current market price divided by the prior year’s earnings per share (i.e., Historic PER). The market price changes constantly, and EPS changes once at the end of the year. It determines the value of the company based on what investors are willing to pay per £1 of earnings the company can generate.</p>
+                        <p>The PER is re-purposed as Po (Share Price) = P/E Ratio x EPS. For example, if the sector’s average P/E is 12% and EPS for the firm is 0.20p: Po = (12 * 0.20) = £2.40. This is then multiplied by the number of ordinary shares the company has in issue, thus giving us the value of the firm via P/E Ratio Model.</p>
+                        <p>As we can see, this is easy to do. However, it is only useful for comparisons and rough estimates, not actual valuation. Additionally it ignores the differences in risk, growth, and earnings stability between companies, as well as assumes the company should have the same P/E as it’s peers, regardless of performance or prospects – this is known as the crude PER method, but we also have the sophisticated method, which more realistic, adjusts for company-specific risk and growth, connects P/E  directly to fundamentals like Ke and g (required rate of return and growth – like dividend model), however, like the dividend model, it requires estimates of the required rate of return, growth, and the retention ratio.</p>
+                        <p>As mentioned, the sophisticated approach adjusts P/E ratio (PER) to reflect the differences in risk and growth for a specific firm. It’s based on the idea that the P/E ratio should depend on the firms required rate of return (or cost of equity), and growth. The formula, in fact, links back to the DVM model. It is as follows.</p>
+                        <p>b = retention ratio (the portion of profits retained at year-end), Ke = required rate of return, and g = growth rate of dividends, or earnings. P/E = ((1-b) / (Ke - g)). For example, b of 0.4, Ke of 11%, and g of 5% is P/E = ((1-0.4) / (0.11-0.05)) = 10. And lastly, with a P/E of 10 and the firm having a EPS of 0.25p, the Po is = (10 * 0.25) = 2.5 (or £2.50).</p>
+                        <p>Before we end, it’s good to acknowledge that the crude method focuses on historical information, or current information, whereas the sophisticated method focuses on the future (which we know investors are focused on for the purposes of wealth maximisation).</p>
+                        <br>
+                        <p id="cashflowmodel"><b>Cash Flow Model</b></p>
+                        <p>The cashflow model is quite literally the best valuation method, however, it is not easy. The cashflow model is where we value a company based on the cash it’s operations generate after investment into fixed assets and working capital. I.e., Value = Free Cash Flows / Cost of Capital (required rate of return).</p>
+                        <p>There are two considerations that need to be made, what are the cash flows, and what is the discount rate (required rate of return (Ke)).</p>
+                        <p>The cashflows will consist of free cash flow to equity shareholders minus operational cashflow adjusted for future changes in asset investments, working capital, and movements in debt payments. And, free cashflows to equity and debt providers minus operational cashflows adjusted for future changes in asset investments, and working capital.</p>
+                        <p>The discount rate will be free cashflows to equity shareholders divided by the required rate of return, and free cashflows to all providers of capital divided by total cost of capital (WACC).</p>
+                        <p>This was done in 1998 by Rappaport, where their drivers can be used to estimate future cashflows. These drivers are: sales growth rate, operating profit margins, tax rates, fixed capital investments, working capital investments, the planning horizon (forecast period), and the required rate of return.</p>
+                    </div>
+                </div>
+                <div class="content-box-1" id="previous/next-page">
+                    <div>
+                        <a href="CFM2.html" class="previous-next-page-btn">Previous Page</a>
+                    </div>
+                    <div>
+                        <a href="CFM4.html" class="previous-next-page-btn">Next Page</a>
                     </div>
                 </div>
             </div>
