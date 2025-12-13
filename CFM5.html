@@ -110,11 +110,124 @@
             <div class="content-section">
                 <div class="content-box-intro">
                     <h1>Cost of Debt & WACC</h1>
+
+                    <button class="table-of-contents-btn">Table of Contents</button>
+                    <div class="table-of-contents-content">
+                        <a href="#introduction" class="toc-btn">Introduction</a>
+
+                        <button class="toc-btn">Types of Debt</button>
+                        <div class="toc-dropdown">
+                            <a href="#irredeemabledebt">1. Irredeemable Debt</a>
+                            <a href="#redeemabledebt">2. Redeemable Debt</a>
+                            <a href="#preferenceshares">3. Preference Shares</a>
+                        </div>
+
+                        <a href="#weightedaveragecostofcapital" class="toc-btn">Weighted Average Cost of Capital (WACC)</a>
+                    </div>
                 </div>
-                <div class="content-box">
+                <div class="content-box" id="introduction">
                     <div>
-                        <h1></h1>
-                        <p></p>
+                        <h1>Introduction</h1>
+                        <p>The cost of debt (Kd) represents the effective rate of return required by debt holders, such as banks and bond investors. From the company’s perspective, it reflects the interest cost of borrowed funds, adjusted for corporation tax, since interest payments are tax-deductible.</p>
+                        <p>Because of this tax relief, the after-tax cost of debt is lower than the stated interest rate, making debt a cheaper source of finance than equity.</p>
+                        <p>The basic cost of debt formula is: Kd = I x (1 - T)</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>I = Interest Rate.</li>
+                            <li>T = Corporation Tax Rate.</li>
+                        </ul>
+                        <p><u>For example:</u></p>
+                        <p>If a company pays 8% inerest on its debt and corporation tax is 25%:</p>
+                        <p>Kd = I x (1 - T)</p>
+                        <p>Kd = 8% x (1 - 0.25)</p>
+                        <p>Kd = 6%</p>
+                        <p>This shows that although lenders receive 8%, the company's effective (after-cost) cost of debt is 6%.</p>
+                    </div>
+                </div>
+                <div class="content-box" id="typesofdebt">
+                    <div>
+                        <h1>Types of Debt</h1>
+                        <p>There are three forms of debt financing, commonly considered when calculating the cost of debt:</p>
+                        <ul>
+                            <li>Irredeemable Debt (perpetual debt)</li>
+                            <li>Redeemable Debt (debt with a maturity date)</li>
+                            <li>Preference Shares (hybrid securities)</li>
+                        </ul>
+                        <br>
+                        <p id="irredeemabledebt"><b>Irredeemable Debt</b></p>
+                        <p>Irredeemable debt pays a fixed interest indefinitely and has no redemption date. It is treated as a perpetuity.</p>
+                        <p>The formula is: Kd = I x (1 - T) / Po</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>I = Annual Interest (coupon payments).</li>
+                            <li>T = Tax Rate.</li>
+                            <li>Po = Current Market Price of Debt.</li>
+                        </ul>
+                        <p><u>For example:</u></p>
+                        <p>A company issues bonds with a nominal value of £100, market value is £95, annual interest is £10, and corporation tax is 20%:</p>
+                        <p>Kd = I x (1 - T) / Po</p>
+                        <p>Kd = 10 x (1 - 0.2) / 95</p>
+                        <p>Kd = 8.42%</p>
+                        <p>Therefore, the cost of irredeemable debt as a source of finance in this instance is 8.42%.</p>
+                        <br>
+                        <p id="redeemabledebt"><b>Redeemable Debt</b></p>
+                        <p>Redeemable debt is repaid at a specific future date. The cost of redeemable debt must account for:</p>
+                        <ul>
+                            <li>Annual Interest Payments, and</li>
+                            <li>Any Gain or Loss upon Redemption.</li>
+                        </ul>
+                        <p>The appropriate approach is to calculate the Internal Rate of Return (IRR), which equates the present value of future cash flows to the current market price.</p>
+                        <p>The formula is: Kd = I / (1 + R)^N x (1 - T)</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>I = Annual Interest (coupon payments).</li>
+                            <li>R = Discount Rate.</li>
+                            <li>N = Period.</li>
+                            <li>T = Tax Rate.</li>
+                        </ul>
+                        <p><u>For example: using the IRR approach:</u></p>
+                        <p>The cash flows are:</p>
+                        <ul>
+                            <li>Year 0: -93</li>
+                            <li>Year 1: 6</li>
+                            <li>Year 2: 6</li>
+                            <li>Year 3: 106</li>
+                        </ul>
+                        <p>And corporation tax is 20%.</p>
+                        <p>The aim is to add a discount rate that is the closest to the market price of a redeemable debt source. For a market price of £93, 8.75% offers the closest.</p>
+                        <p>Kd = I / (1 + R)^N x (1 - T) (Note that its the formula repeated multiple times depending on the period).</p>
+                        <p>Kd = 6 / (1 + 0.875)^1 + 6 / (1 + 0.875)^2 + 106 / (1 + 0.875)^3</p>
+                        <p>Kd = £93.01.</p>
+                        <p>Thus, based on the discount rate of 8.75%, corporation tax is:</p>
+                        <p>Kd = 8.75% x (1 - 0.20)</p>
+                        <p>Kd = 6.56%.</p>
+                        <p>Therefore, 8.75% is the before-tax cost of redeemable debt as a finance source, and 6.56% is the after-tax cost.</p>
+                        <br>
+                        <p id="preferenceshares"><b>Preference Shares</b></p>
+                        <p>Preference shares are a hybrid source of finance, sharing characteristics of both debt and equity. Although they pay a fixed dividend, preference dividends are not tax-deductible, meaning no tax adjustment is made when calculating their cost.</p>
+                        <p>As a result, preference shares are included in WACC without applying the tax shield.</p>
+                    </div>
+                </div>
+                <div class="content-box" id="weightedaveragecostofcapital">
+                    <div>
+                        <h1>Weighted Average Cost of Capital (WACC)</h1>
+                        <p>The Weighted Average Cost of Capital (WACC) represents the overall return required by all providers of finance, weighted according to their market value. It reflects the company’s total cost of capital and is used as the discount rate in investment appraisal techniques such as NPV and IRR.</p>
+                        <p>The formula is: WACC = (E / V x Ke) + (D / V x Kd x (1 - T))</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>E = Market Value of Equity.</li>
+                            <li>D = Market Value of Debt.</li>
+                            <li>V = E + D = Total Market Value of Capital.</li>
+                            <li>Ke = Cost of Equity.</li>
+                            <li>Kd = Cost of Debt.</li>
+                            <li>T = Corporation Tax.</li>
+                        </ul>
+                        <p><u>For example:</u></p>
+                        <p>If we have a market value of equity at £3m, debt at £2m, cost of equity at 10.44%, before-tax cost of debt at 8%, and corporation tax at 25%:</p>
+                        <p>WACC = (E / V x Ke) + (D / V x Kd x (1 - T))</p>
+                        <p>WACC = (3,000,000 / 5,000,000 x 10.44%) + (2,000,000 / 5,000,000 x 8% x (1 - 0.25))</p>
+                        <p>WACC = 8.66%</p>
+                        <p>Therefore, 8.66% represents the comapany's discount rate for capital budgeting considering their balance between equity and debt financing.</p>
                     </div>
                 </div>
                 <div class="content-box-1" id="previous/next-page">
