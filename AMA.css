@@ -169,7 +169,7 @@ body.sidebar-open {
 /* Typography */
 h1, h2, h3, p {
   text-align: center;
-  margin: 10px;
+  margin: 30px;
 }
 
 h1 {font-size: 27px;}
@@ -184,7 +184,7 @@ p {font-size: 18px;}
   text-align: left;
   margin: 10px auto;
   padding-left: clamp(1.5rem, 3vw, 2.5rem);
-  font-size: clamp(14px, 2.2vw, 20px);
+  font-size: 18px;
   list-style-position: outside;
   max-width: clamp(300px, 90%, 800px);
 }

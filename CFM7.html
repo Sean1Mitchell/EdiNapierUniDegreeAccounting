@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CFM - Module 7</title>
   <link rel="stylesheet" href="CFM.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
 <body>
     <header>
         <div class="logo">Edinburgh Napier University</div>
@@ -110,11 +111,72 @@
             <div class="content-section">
                 <div class="content-box-intro">
                     <h1>Short & Long Term Finance</h1>
+
+                    <button class="table-of-contents-btn">Table of Contents</button>
+                    <div class="table-of-contents-content">
+                        <a href="#introduction" class="toc-btn">Introduction</a>
+                        
+                        <a href="#short-term-finance" class="toc-btn">Short-Term Finance</a>
+
+                        <a href="#medium-term-finance" class="toc-btn">Medium-Term Finance</a>
+                    </div>
                 </div>
-                <div class="content-box">
+                <div class="content-box" id="introtoshortandmediumtermfinance">
                     <div>
-                        <h1></h1>
-                        <p></p>
+                        <h1>Intro to Short & Medium Term Finance</h1>
+                        <p>In a company, it is crucial that we ensure the firm has sources of both short-term, and long-term financing to support operations, growth, or asset acquisitions that does not require permanent capital investment (long-term).</p>
+                        <p>We want to look at both short and medium term financing. Short-term is typically up to one-year, and this type of funding is usually for working capital management, like paying suppliers, wages, and managing seasonal cash gaps. Medium-term is typically between 1 and 7 years, and this type of funding is usually for asset purchases or projects that yield benefits within a few years.</p>
+                        <p>Being able to balance short and medium-term sources allows firms to maintain liquidity without overcommitting the firm to costly long-term debt.</p>
+                        <p>When deciding on the type of financing to go with, there are a few considerations that need to be made.</p>
+                        <p><b>The cost of finance</b> – which includes transaction costs like admin or arrangements fees paid to the lender for the facilitation of funds, and the money cost like repayments of interest, or the cost of borrowing from lenders.</p>
+                        <p><b>Flexibility</b> – how flexible is the type to borrowing terms, for example, if circumstances change? Overdrafts are flexible and can be reduced or increased easily with access being basically immediate, whereas term loans are less flexible where terms and period are fixed on agreement. For a firm with unpredictable cash flows, funding that allows for flexibility are crucial.</p>
+                        <p><b>Risk</b> – regardless of the type of finance, there is always some degree of risk that will be taken on, but some are less favourable than others. Interest rate risk, especially variable rates, raise uncertainty as they can rise with economical changes that have nothing to do with the firm itself. Default risk is where the borrower may fail to meet repayments agreed upon. Withdrawal risk is where the lender may withdraw funding or refuse renewal (common in overdrafts), and refinancing risk is a lender refuses to renew the funding upon expiry. The more short-term the debt, the greater the financing risk.</p>
+                        <p><b>Type of Customer</b> -  having access to finance depends on the size and reputation, for example, a large firm has access to capital markets like commercial paper and lower borrowing costs, whereas smaller firms rely on bank overdrafts, factoring, or hire purchasing due to their limit creditworthiness.</p>
+                        <p><b>Origins of Funds</b> – these can come from internal and external sources, for example, an internal source would be a firm’s retained earnings, and an external source would be a from a bank or investor. Diversifying sources spreads risk and improves resilience.</p>
+                        <p><b>Timing of Cash flows</b> – which is when money is received and paid. Business’s must ensure payment schedules align with their cashflows. Early repayment flexibility can reduce costs, but not all facilities allow it. Poor timing can lead to liquidity issues or unnecessary interest costs.</p>
+                        <p><b>Recourse</b> – the bearer of non-payment risk is determined by recourse, which is mainly in factoring or bills of exchange. With recourse the original seller, i.e., the borrower, still carries the risk, whereas without recourse, the buyer of the debt, i.e., the factor, assumes the risk. Without recourse gives more protection to the firm selling its debt but does usually come at a higher cost.</p>
+                        <p>When funding is out with the UK (Export Finance), working capital increases due to extended credit periods (to allow for the export), which in turn increases trade receivables. As with the nature of trade receivables, there is the added risk of non-payment from customers, and lastly, with it exporting internationally, we’re operating in other legal jurisdictions that have different currencies, hence the final issue being currency exposure – where foreign currency value changes before payment.</p>
+                        <p> To mitigate these concerns, factoring or invoice discounting (the outsourcing of debt collection to a native bank/finance firm) as it offers immediate liquidity, frees up working capital, and mitigates default risk. And other way it a letter of credit – a formal written agreement where the buyers bank issues payment on buyers behalf upon confirmation of documentation – this third party involvement is crucial for different legal systems and reduces the need for trust between buyers and sellers.</p>
+                        <p>The considerations that need to be made for short and medium-term finance is as follows:</p>
+                        <p><u>Short-Term:</u></p>
+                        <ul>
+                            <li><b>Cost</b> - usually higher interest rates (risk premium).</li>
+                            <li><b>Flexibility</b> - easier to adjust or repay early.</li>
+                            <li><b>Risk</b> - refinancing risk (loan renewal).</li>
+                            <li><b>Suitability</b> - seasonal/temporary needs.</li>
+                        </ul>
+                        <p><u>Medium-Term:</u></p>
+                        <ul>
+                            <li><b>Cost</b> - lower interest rates due to stability.</li>
+                            <li><b>Flexibility</b> - ixed commitment.</li>
+                            <li><b>Risk</b> - less renewal risk.</li>
+                            <li><b>Suitability</b> - asset investment or long-term growth.</li>
+                        </ul>
+                        <p>There is a principal that is the theory of matching, where the life of an asset aligns with the duration of finance. For example, a fixed asset like a building, or machinery is a long-term finance. Permanent current assets like inventory, is a medium-term finance. And, fluctuating current assets like seasonal stock, or receivables is short-term finance.</p>
+                        <p>There is also the element of financing policies, where aggressive is where we use more short-term finance which is cheaper but riskier, where moderate is where we use a balanced mix between short and long-term finance, which as mentioned, balances each other out, and lastly, conservative is where we use more long-term finance, which is safer, but far more expensive.</p>
+                    </div>
+                </div>
+                <div class="content-box" id="short-term-finance">
+                    <div>
+                        <h1>Short-Term Finance</h1>
+                        <p>There are a few forms of short-term finance options available to firms:</p>
+                        <p><b>Bank Overdraft</b> - a flexible borrowing options that allows a firm to withdraw more money than what it has available, but only to a certain agreed upon limit. The interest due on this is limited to the amount actually being borrowed, which is usually at a variable rate, which highlights a potential risk. They are quick to arrange but are repayable upon demand. They have the added element of renewal risk, where banks do not want to allow overdraft to be accessible indefinitely, which is another risk factor. This is used mainly for day-to-day cash flow requirements, not medium to long-term investment.</p>
+                        <p><b>Trade Credit</b> - the period that suppliers allow businesses before payment of goods or services. This is cost-free if paid on time, however, if not, it damages the reputation of the firm, and it’s overall credit rating. This is effective for short-term finance only, but is limited to the agreed upon credit period set by the supplier.</p>
+                        <p><b>Factoring</b> - where a firm sells it’s trade receivables (customer debt) to a factor (often a bank subsidiary). This offers an immediate cash inflow of around 70 – 90%, with the remaining balance paid when customers settle the debt. Factor may handle debt collection, and credit control. With recourse the firm bears the risk, whereas without recourse, the factor does. This allows for improved liquidity, and admin being outsources (less admin cost), but it is in itself expensive and may signal financial weakness to outsiders (competition).</p>
+                        <p><b>Invoice Discounting</b> - which is similar to factoring, but is confidential (customers unaware), the firms handles collection and control, funds advanced against selected invoices, generally done with recourse (i.e., firms take bear of risk), and it’s cheaper because the factor does not handles admin. This is useful to the firm if needing quick cash without customer involvement.</p>
+                        <p><b>Bills of Exchange</b> - which is a formal written promise from one party (the buyer) to pay another (the seller) at a future date. This can be sold (discounted) to raise immediate cash, and is common in export trading. This acts as a legally enforceable debt instrument.</p>
+                        <p><b>commercial Paper</b> - which is a short-term unsecured debt instrument issued by large firms with strong credit ratings. Usually issued in large denominations (100k+). The maturity is usually between 7 and 270 days. It’s cheaper than bank loans but only available to large firms with creditworthiness. Can be “rolled over” into new issues for medium-term finance. It’s cost-efficient but risky due to the lack of flexibility and no secondary market.</p>
+                        <p><b>Euromoney/Euromarkets</b> - which is the borrowing and lending of currencies of other origins. It includes Eurobonds and Eurocommerical paper. Developed to avoid domestic regulations. Is a key part of international corporate finance. It’s useful for multinational firms managing cross-border funding.</p>
+                    </div>
+                </div>
+                <div class="content-box" id="medium-term-finance">
+                    <div>
+                        <h1>Medium-Term Finance</h1>
+                        <p>There are a few forms of medium-term finance options available to firms:</p>
+                        <p><b>Term Loans</b> - which is a fixed term loan for anywhere between 1 – 7 years with either a fixed or variable interest rate. It’s either a bullet or instalments payment terms, which may include a covenant restricting the firms behaviour. It’s also often secured against assets. It provides stability for medium-term projects but lacks flexibility. The Government also offers a scheme known as GGS – Growth Guarantee Scheme, which allows banks to lend small firms with 70% of default risk (up to £2m).</p>
+                        <p><b>Hire Purchase</b> - which is a finance method of acquiring assets. Where the firms buys an asset, through hiring it via the seller and paying instalments (capital + interest) until final payment where transfer of ownership of the asset it finalised. This allows the firm to purchase an asset without a substantial up-front cost, while utilising the asset to generate enough income to cover the repayments, it’s also done at a fixed rate, and interest is tax-deductible. However, it is a long-term commitment and ownership is delayed.</p>
+                        <p><b>Leasing</b> - which is similar to hire purchase, although ownership forever remains with the “seller”, known as a Lessor. This allows for a firm to utilise an asset of another forms in exchange for regular payments. It covers assets like machinery, vehicles, etc. It must be recognised on the balance sheet under IFRS 16. This provides the advantages of preserving cash, and spread costs. However, with the disadvantages of it being a long-term commitment, and the total cost being higher as opposed to buying outright.</p>
+                        <p><b>Sales and Leasebacks</b> - which is where a firm will sell a valuable asset to a finance company, then they would lease it back to them. It allows for immediate cash inflow from the sale, however, may trigger capital gains tax. The lease payments are tax-deductible, but they would lose future ownership benefits, like appreciation. It’s ideal to firms looking to free up capital tied in non-current assets.</p>
                     </div>
                 </div>
                 <div class="content-box-1" id="previous/next-page">
