@@ -7,7 +7,7 @@
   --secondary-text-clr: #b0b3c1;
   
   --header-height: 60px;
-  --sidebar-width: 320px;
+  --sidebar-width: 370px;
 }
 
 *,
@@ -602,6 +602,7 @@ a.toc-btn {
   h2 {font-size: 18px;}
   h3 {font-size: 16px;}
   p {font-size: 14px;}
+  a {font-size: 10px;}
 
   #progress {
     height: 60px;
