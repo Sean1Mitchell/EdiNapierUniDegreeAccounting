@@ -172,37 +172,244 @@
                 <div class="content-box" id="netpresentvalue">
                     <div>
                         <h1>Net Present Value (NPV)</h1>
-                        <p></p>
+                        <p>NPV represents the difference between the present value of future cash inflows and the present value of cash outflows.</p>
+                        <p>The decision rule is that if NPV is equal to or more than 0, we accept it. But if it’s under 0 (in the negative), we reject it. This method is considered the most reliable because the result is in month terms, not percentages, and directly measures wealth creation.</p>
+                        <p>How does it work? Future cash flows are discounted back to todays using a discount rate (usually the cost of capital). For example:</p>
+                        <ol>
+                            <li>We calculate to net cash flow (i.e., income - expenses).</li>
+                            <li>We then multiple by discount rate to get present value.</li>
+                            <li>We then sum up all period (i.e., 5 years) to get total NPV.</li>
+                        </ol>
+                        <p>There are rules though (and exam reminders):</p>
+                        <p><u>Include:</u></p>
+                        <ul>
+                            <li>Only extra cash caused by the project.</li>
+                            <li>Cash inflows and outflows.</li>
+                            <li>Working capital changes.</li>
+                            <li>Tax effects.</li>
+                            <li>Scrap values.</li>
+                        </ul>
+                        <p><u>Exclude:</u></p>
+                        <ul>
+                            <li>Sunk costs (money already spent).</li>
+                            <li>Depreciation (non-cash).</li>
+                            <li>Financing costs (interest, dividends – already in discount rate).</li>
+                        </ul>
+                        <p><u>Timing Rules:</u></p>
+                        <ul>
+                            <li>Cash flows occur at year-end unless stated.</li>
+                            <li>In inflation is included, use money discount rate.</li>
+                            <li>If using real cash flows, use real discount rate.</li>
+                        </ul>
+                        <p><u>Relationship:</u></p>
+                        <ul>
+                            <li>(1 + real rate) x (1 + inflation) = (1 + money rate)</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="content-box" id="internalrateofreturn">
                     <div>
                         <h1>Internal Rate of Return (IRR)</h1>
-                        <p></p>
+                        <p>IRR is the discount rate that makes the NPV of a project equal to 0. It tells us the projects annual percentage of return. The decision rule is that if IRR is higher than the cost of capital, we accept, and reject if it's less.</p>
+                        <p>How do we work it out?</p>
+                        <p>We take the initial outlay (cost) and expected returns over a period (say 3 Years), we then multiple by the discount rate to get cumulative cash flow of the project over the period, i.e., total NPV.</p>
+                        <p>Therefore, we need to total NPV of the project, however, we want to see the total NPV of the project of two different discount factors. One must be positive NPV, and one negative NPV.</p>
+                        <p>For example, let's say we have a discount factor of 10% which gives a NPV of £1,526.98 and another discount factor of 25% which gives a NPV of -£304.64.</p>
+                        <p>We take the IRR formula and find:</p>
+                        <p>IRR = r1 + (NPV1 / (NPV1 - NPV2)) x (r2 - r1)</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>r1 = positive NPV</li>
+                            <li>r2 = negative NPV</li>
+                            <li>NPV1 = Positive NPV</li>
+                            <li>NPV2 = Negative NPV</li>
+                        </ul>
+                        <p>IRR = 10%+(1526.98/(1526.98-(-304.64)))*(25%-10%)</p>
+                        <p>IRR = 23%</p>
+                        <p>Therefore, we have a positive IRR of 23% which is higher than the discount rate of 10%. So we accept the project.</p>
                     </div>
                 </div>
                 <div class="content-box" id="capitalrationingandprobabilityindex">
                     <div>
                         <h1>Capital Rationing & Probability Index (PI)</h1>
-                        <p></p>
+                        <p>It is rare than a company will have just one positive NPV project to take on due to funding constraints, therefore, capital rationing and PI are used to determine which positive ones to accept.</p>
+                        <p>There are two types of capital rationing:</p>
+                        <ul>
+                            <li><b>Soft</b> - Internal Limits.</li>
+                            <li><b>Hard</b> - External Financial Conatraints.</li>
+                        </ul>
+                        <p>There are two tools used for rationing:</p>
+                        <ul>
+                            <li><b>Probability Index (PI)</b> - where PI = Gross PV / Initial Outlay.</li>
+                            <li><b>Benefit-Cost Ration</b> - where C/B = NPV / Initial Outlay.</li>
+                        </ul>
+                        <p>For example:</p>
+                        <ol>
+                            <li><b>Project A</b>: outlay of 7,000, NPV of 1,527, and GPV of 8,527: gives a PI of 1.218 and C/B of 0.218.</li>
+                            <li><b>Project B</b>: outlay of 12,000, NPV of 1,723, and GPV of 13,723: gives a PI of 1.143 and C/B of 0.143.</li>
+                        </ol>
+                        <p>Project A produced a 21.8p return per £1 invested, whereas, Project B produced a 14.3p return per £1 invested.</p>
+                        <p>Therefore, rationing tells us that we should accept Project A as it offers a higher return.</p>
+                        <p>Another example would be:</p>
+                        <ol>
+                            <li><b>Project A</b>: outlay of 500, NPV of 125, IRR of 28%: giving a PI of 1.25</li>
+                            <li><b>Project B</b>: outlay of 250, NPV of 75, IRR of 22%: giving a PI of 1.30</li>
+                            <li><b>Project C</b>: outlay of 250, NPV of 25, IRR of 35%: giving a PI of 1.10</li>
+                            <li><b>Project D</b>: outlay of 100, NPV of 50, IRR of 30%: giving a PI of 1.50</li>
+                            <li><b>Project E</b>: outlay of 150, NPV of 50, IRR of 30%: giving a PI of 1.33</li>
+                        </ol>
+                        <p>If available capital is limited to 500k, our aim is to maximise returns using the full amount. Therefore, we accept the projects that allow this.</p>
+                        <p>The 1st thing we do is look at the highest to lowest of PI, and we take up as much available capital we can.</p>
+                        <p>Projects B, D, and E are the top three highest PI's, and together, they may up 500k in total outlay, taking the total NPV to 175.</p>
                     </div>
                 </div>
                 <div class="content-box" id="assetreplacementdecisions">
                     <div>
                         <h1>Asset Replacement Decisions</h1>
-                        <p></p>
+                        <p>An asset replacement decision is a capital budgeting decision that determines whether an existing asset is to be replaced, and if so, when.</p>
+                        <p>The objective is to maximise shareholder value by minimising long-term costs or maximising net cash flows.</p>
+                        <p>If machines have different useful lives, comparing NPV's alone is misleading, and for this there are two solutions:</p>
+                        <ul>
+                            <li><b>Equivalent Annual Cost (EAC) Method</b> - which is generally perferred due to it's simplicity. It converts the total NPV of costs into uniform annual cost. EAC = PV(cost) / Annuity Factor. (choose the machine with the lower EAC).</li>
+                            <li><b>Least Common Multiple (LCM) Method</b> - which extends common life lenghts from 2 and 3 years, to 6 years.</li>
+                        </ul>
+                        <p>For example: (EAC)</p>
+                        <p>Machine X:</p>
+                        <ul>
+                            <li>Cost of: 120,000. Life Cycle of: 3 Yrs. Running Costs of: 24,000.</li>
+                            <li>Cash Outflows of: 120, 24, 24, 24.</li>
+                            <li>Discount Rate of 10%.</li>
+                            <li>Giving a PV(cost) of: 120, 21.82, 19.83, 18.03.</li>
+                            <li>Giving a Total PV(cost) of: 179.7 (or £179,684).</li>
+                        </ul>
+                        <p>Machine Y:</p>
+                        <ul>
+                            <li>Cost of: 60,000. Life Cycle of: 2 Yrs. Running Costs of: 36,000.</li>
+                            <li>Cash Outflows of: 60, 36, 36.</li>
+                            <li>Discount Rate of: 10%.</li>
+                            <li>Giving a PV(cost) of: 60, 32.73, 29.75.</li>
+                            <li>Giving a Total PV(cost) of: 122.5 (or £122,479).</li>
+                        </ul>
+                        <p>Comparison:</p>
+                        <ul>
+                            <li><b>Machine X</b>: 179,684 (Total Life Cost) / 2.487 = 72,254 (Per Year Cost)</li>
+                            <li><b>Machine Y</b>: 122,479 (Total Life Cost) / 1.736 = 70,571 (Per Year Cost)</li>
+                        </ul>
+                        <p>The 2.487 and 1.736 are called PV of Annuity. We find this by using the following formula:</p>
+                        <p>(1 - (1 + r)^-n) / r</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>r = Discount Rate.</li>
+                            <li>n = Number of Years.</li>
+                        </ul>
+                        <p>In conclusion, it's a cheaper cost going with Machine Y (70,571), so we choose that over machine X (72,254). Because once again, choosing it minimises cost, thus, maximising shareholder value.</p>
+                        <p>For example: (LCM)</p>
+                        <p>Again, this is similar to that of EAC, only the period (life cycle) is extended to 6 years.</p>
+                        <p>Machine X:</p>
+                        <ul>
+                            <li>Total Cash Outflows of: 120, 24, 24, 144, 24, 24, 24.</li>
+                            <li>Discount Rate of: 10%.</li>
+                            <li>Giving a PV(cost) of: 120, 21.82, 19.83, 108.19, 16.39, 14.90, 13.55.</li>
+                            <li>Giving a Total PV(cost) of: 314.7 (or £314,684).</li>
+                        </ul>
+                        <p>Machine Y:</p>
+                        <ul>
+                            <li>Total Cash Outflows of: 60, 36, 96, 36, 96, 36, 36.</li>
+                            <li>Discount Rate of: 10%.</li>
+                            <li>Giving a PV(cost) of: 60, 32.73, 79.34, 27.05, 65.57, 22.35, 20.32.</li>
+                            <li>Giving a Total PV(cost) of: 307.4 (or £307,357).</li>
+                        </ul>
+                        <p>Comparison:</p>
+                        <ul>
+                            <li><b>Machine X</b>: 314,684 (Total Life Cost) / 4.355 = 72,254 (Per Year Cost)</li>
+                            <li><b>Machine Y</b>: 307,357 (Total Life Cost) / 4.355 = 70,571 (Per Year Cost)</li>
+                        </ul>
+                        <p>In conclusion, it's a cheaper cost going with Machine Y (70,571), so we choose that over machine X (72,254). Becuase once again, choosing it minimises cost, thus, maximising shareholder value.</p>
+                        <p>It's worth mentioning that with EAC and LCM: We are looking to take the lowest of the per year cost, but you'll notice the total life cost changes based on which we use - that is not important. Focus on the per year cost, and choose the machine/s with the lowest.</p>
                     </div>
                 </div>
                 <div class="content-box" id="taxationininvestmentappraisals">
                     <div>
                         <h1>Taxation in Investment Appraisals</h1>
-                        <p></p>
+                        <p>Net Present Value (NPV) requires cash flows, but tax is paid on taxable profit, which reduces cash flows, therefore, taxation must be included to account for this.</p>
+                        <p>Capital Allowances are made for this and tax relief on plant and machinery includes:</p>
+                        <ul>
+                            <li><b>Annual Investment Allowance (AIA)</b> - gives 100% 1st relief.</li>
+                            <li><b>Written Down Allowance (WDA)</b> - gives relief on a 18% reducing balance basis.</li>
+                        </ul>
+                        <p>When asset are sold:</p>
+                        <ul>
+                            <li><b>Balancing Allowance (BA)</b> - extra relief. CA claimed + net cost of asset = positive.</li>
+                            <li><b>Balancing Charge (BC)</b> - extra taxable income. CA claimed + net cost of asset = negative.</li>
+                        </ul>
+                        <p>For example:</p>
+                        <p>Information:</p>
+                        <ul>
+                            <li>Project will generate net cash inflows of 4,000 per annum for 5 years.</li>
+                            <li>Investment in plant in year 0 is 14,000.</li>
+                            <li>Plant will be scrapped at the end of year 5 (nil value).</li>
+                            <li>Corporation Tax is 20% per year.</li>
+                            <li>Corporation Tax is paid in the following year.</li>
+                            <li>Capital allowance rate (WDA) is 18% RB per year.</li>
+                            <li>Cost of capital is 10%.</li>
+                        </ul>
+                        <p>Step 1: Work out Capital Allowances</p>
+                        <p>With an initial investment of 14,000 with WDA at 18% reducing balance per year, we end with:</p>
+                        <ul>
+                            <li>Year 0: 14,000</li>
+                            <li>Year 1: (14,000 x 0.18) = 2,520</li>
+                            <li>Year 2: (14,000 - 2,520) = 11,480 x 0.18 = 2,066</li>
+                            <li>Year 3: (11,480 - 2,066) = 9,414 x 0.18 = 1,694</li>
+                            <li>Year 4: (9,414 - 1,694) = 7,719 x 0.18 = 1,389</li>
+                            <li>Year 5: (7,719 - 1,389) = 6,330 x 0.18 = 1,139</li>
+                            <li>Capital Allowance Claimed: -(2,520 + 2,066 + 1,694 + 1,389 + 1,139) = -8,810</li>
+                            <li>Net Cost of Asset: (14,000 - 0) = 14,000</li>
+                            <li>Balancing Allowance: (-8,810 + 14,000) = 5,190</li>
+                        </ul>
+                        <p>Step 2: Work out Corporation Tax</p>
+                        <ul>
+                            <li>Years: 1, 2, 3, 4, 5</li>
+                            <li>Net Cash Inflows: 4,000, 4,000, 4,000, 4,000, 4,000</li>
+                            <li>Capital Allowances: -2,250, -2,066, -1,694, -1,389, -1,139</li>
+                            <li>Taxable Profit/Loss: 1,480, 1,934, 2,306, 2,611, -2,330</li>
+                            <li>Corporation Tax: 296, 387, 461, 522, -466</li>
+                            <li>Tax Payable In: YR2, YR3, YR4, YR5, YR6</li>
+                        </ul>
+                        <p>Step 3: Work out Net Present Value</p>
+                        <ul>
+                            <li>Years: 0, 1, 2, 3, 4, 5, 6</li>
+                            <li>Capital: -14,000, 0, 0, 0, 0, 0</li>
+                            <li>Net Cash Flows: 0, 4,000, 4,000, 4,000, 4,000, 4,000, 0</li>
+                            <li>Corporation Tax: 0, 0, 296, 387, 461, 522, -466</li>
+                            <li>Net Cash Flows AT: -14,000, 4,000, 3,704, 3,613, 3,539, 3,478, 466</li>
+                            <li>Discount Rate (10%): 1.000, 0.909, 0.826, 0.751, 0.683, 0.621, 0.564</li>
+                            <li>Present Value: -14,000, 3,636, 3,061, 2,715, 2,417, 2,159, 263</li>
+                            <li>Net Present Value: 252 (Positive, so we accept).</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="content-box" id="whentousewhich">
                     <div>
                         <h1>When to Use Which</h1>
-                        <p></p>
+                        <p>Use NPV when:</p>
+                        <ul>
+                            <li>Projects are mutually exclusive.</li>
+                            <li>There is unconventional cash flows.</li>
+                            <li>Comparing projects of different sizes.</li>
+                            <li>Capital rationing exists.</li>
+                            <li>(NPV is always the superior method).</li>
+                        </ul>
+                        <p>Use IRR when:</p>
+                        <ul>
+                            <li>Projects have multiple sign changes.</li>
+                            <li>Capital outlay differs.</li>
+                            <li>Reinvestment at IRR is unrealistic.</li>
+                        </ul>
+                        <p>Use PI when:</p>
+                        <ul>
+                            <li>Capital is rationed.</li>
+                            <li>Choosing combination of projects for maximum NPV.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="content-box-1" id="previous/next-page">
