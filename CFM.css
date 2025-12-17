@@ -7,7 +7,7 @@
   --secondary-text-clr: #b0b3c1;
   
   --header-height: 60px;
-  --sidebar-width: 400px;
+  --sidebar-width: 320px;
 }
 
 *,
@@ -176,7 +176,6 @@ h1 {font-size: 27px;}
 h2 {font-size: 25px;}
 h3 {font-size: 23px;}
 p {font-size: 18px;}
-a {font-size: 14px;}
 
 /* Fix for ul and ol styling - properly centered and responsive */
 .content-box ul,
@@ -571,22 +570,6 @@ a.toc-btn {
 }
 
 @media (max-width: 480px) {
-
-  body.sidebar-open {
-    overflow: auto;
-  }
-
-  .sidebar {
-    overflow: hidden;
-  }
-
-  .sidebar-content {
-    height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-y;
-  }
-
   .logo {
     font-size: 1.25rem;
   }
@@ -619,7 +602,6 @@ a.toc-btn {
   h2 {font-size: 18px;}
   h3 {font-size: 16px;}
   p {font-size: 14px;}
-  a {font-size: 8px;}
 
   #progress {
     height: 60px;
