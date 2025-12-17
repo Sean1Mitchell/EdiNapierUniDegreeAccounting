@@ -572,6 +572,21 @@ a.toc-btn {
 
 @media (max-width: 480px) {
 
+  body.sidebar-open {
+    overflow: auto;
+  }
+
+  .sidebar {
+    overflow: hidden;
+  }
+
+  .sidebar-content {
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
   .logo {
     font-size: 1.25rem;
   }
