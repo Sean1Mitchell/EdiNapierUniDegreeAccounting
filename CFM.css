@@ -571,13 +571,6 @@ a.toc-btn {
 }
 
 @media (max-width: 480px) {
-  .sidebar {
-    width: 0;
-  }
-
-  .sidebar.active {
-    width: var(--sidebar-width);
-  }
 
   .logo {
     font-size: 1.25rem;
