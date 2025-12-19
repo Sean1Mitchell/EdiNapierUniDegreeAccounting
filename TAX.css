@@ -7,7 +7,7 @@
   --secondary-text-clr: #b0b3c1;
   
   --header-height: 60px;
-  --sidebar-width: 320px;
+  --sidebar-width: 370px;
 }
 
 *,
@@ -71,14 +71,17 @@ header {
   top: var(--header-height);
   left: 0;
   width: 0;
-  height: calc(100vh - var(--header-height));
+  height: calc(100dvh - var(--header-height));
   background-color: var(--base-clr);
   border-right: 1px solid var(--line-clr);
   transition: width 0.3s ease;
   overflow: hidden;
-  overflow-y: auto;
   flex-shrink: 0;
   z-index: 999;
+}
+
+.sidebar-content p {
+  margin: 10px;
 }
 
 .sidebar.active {
@@ -88,6 +91,9 @@ header {
 .sidebar-content {
   width: var(--sidebar-width);
   padding-top: 20px;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .sidebar-btn {
@@ -602,6 +608,7 @@ a.toc-btn {
   h2 {font-size: 18px;}
   h3 {font-size: 16px;}
   p {font-size: 14px;}
+  a {font-size: 14px;}
 
   #progress {
     height: 60px;
