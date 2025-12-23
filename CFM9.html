@@ -20,8 +20,6 @@
             <div class="sidebar-content">
                 <a href="index.html" class="sidebar-btn">Homepage</a>
 
-                <p class="trimester-sidebar"><b><u>Trimester 1</u></b></p>
-
                 <button class="sidebar-btn">Corporate Financial Management</button>
                 <div class="sidebar-dropdown">
                     <a href="CFM1.html">Previous Years Study</a>
@@ -63,8 +61,6 @@
                     <a href="TAX10.html">Inheritance Tax</a>
                     <a href="TAX11.html">Revision</a>
                 </div>
-
-                <p class="trimester-sidebar"><b><u>Trimester 2</u></b></p>
 
                 <button class="sidebar-btn">Advanced Corporate Reporting</button>
                 <div class="sidebar-dropdown">
@@ -251,30 +247,166 @@
                             <li>Tailored contracts.</li>
                             <li>No cash exchanged until settlement date.</li>
                         </ul>
+                        <p><u>Money Market Hedge</u></p>
+                        <ul>
+                            <li>Uses borrowing/lending in money markets to create a natural hedge.</li>
+                        </ul>
+                        <p><u>Derivatives</u></p>
+                        <ul>
+                            <li>Futures.</li>
+                            <li>Options.</li>
+                            <li>Swaps.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="content-box" id="hedgingexporterscenario">
                     <div>
                         <h1>Hedging - Exporter Scenario</h1>
-                        <p></p>
+                        <p>Information:</p>
+                        <ul>
+                            <li>The importer must pay 10 million Hong Kong currency in 3-months time.</li>
+                            <li>Spot is: (Bid) 12.9530 and (Offer) 12.9988</li>
+                            <li>Forward 3-months: (Bid) 12.7884 and (Offer) 12.8484</li>
+                            <li>UK Interest Borrow at 7% with a 5% deposit.</li>
+                            <li>KH Interest Borrow at 6% with a 4% deposit.</li>
+                        </ul>
+                        <p><u>Option 1 - Forward Contract</u></p>
+                        <p>Becuase the exporter is selling foreign currnecy, use offer rate of 12.8484, therefore, (10,000,000 / 12.8484) = 778,307.</p>
+                        <p><u>Option 2 - Money Market Hedge</u></p>
+                        <p>Step 1: borrow foreign currency: 6% / 4 = 1.5%, therefore, (10,000,000 x 1.015) = 9,852,217.</p>
+                        <p>Step 2: convert to £ (the offer): (9,852,217 / 12.9988) = 757,933.</p>
+                        <p>Step 3: invest in UK: 7% / 3 = 1.25%, therefore, (757,933 x 1.0125) = <b>767,407</b>.</p>
+                        <p>If it's used to reduce UK borrowng: 7% / 4 = 1.75%, therefore, (757,933 x 1.0175) = 771,196.</p>
+                        <p><u>Option 3 - Lead Payment (encourage early payment)</u></p>
+                        <p>Step 1: Give 2% discount: receive (10,000,000 x 98%) = 9,800,000.</p>
+                        <p>Step 2: Convert to spot: (9,800,000 / 12.9988) = 753,915.</p>
+                        <p>Step 3: Invest in UK: 5% / 4 = 1.25, therefore, (753,915 x 1.0125) = <b>763,339</b>.</p>
+                        <p>If it's used to reduce UK borrowing: 7% / 4 = 1.75, therefore, (753,915 x 1.0175) = 767,108.</p>
+                        <p><u>In conclusion</u></p>
+                        <ul>
+                            <li>Option 1: Forward Contract: 778,307.</li>
+                            <li>Option 2: Money Market Hedge: 767,407.</li>
+                            <li>Option 3: Lead Payment: 763,339.</li>
+                        </ul>
+                        <p>Option 1 offers the highest return; thus, we with this that option in this scenario.</p>
+                        <hr>
+                        <p><u>More Information on options 2 and 3</u></p>
+                        <p><u>Information</u></p>
+                        <p>The UK exporter will receive 10 million Hong Kong currency in 3 months time, but that currency may weaken between now and them, therefore, a money market hedge is where we 'lock in' the today home currency value of Hong Kong value (referred to as 'Receipt') using: borrowing, conversion, and investment. This removes the exchange rate uncertainty completely.</p>
+                        <p><b>Option 2: Money Market Hedge</b></p>
+                        <p>In this option, there are three steps, with the last being based on how we'd like to use that money.</p>
+                        <p>Step 1 is to borrow the forign currency, Step 2 is to convert the foreign currency to home currency, and Step 3 is how we're going to use it.</p>
+                        <p><u>Step 1</u>: the borrow.</p>
+                        <p>The idea here is to borrow, but we know that we'll be incurring interest, therefore, if we borrow the present value today, in three months time, the borrowed amount (principal) and the added interest, would make up the 10 million we're set to receive. This means that in three months when we do receive the 10 million, it's automatically paid off as the interest is embedded in the final payment amount (the receipt).</p>
+                        <p><u>Step 2</u>: the conversion.</p>
+                        <p>The purpose of converting the foreign currency immediately is to lock in its home currency value. If conversion were delayed, movements in the exchange rate could result in fewer home currency being received, whereas early conversion fixes the amount with certainty.</p>
+                        <p><u>Step 3</u>: the spending.</p>
+                        <p>The converted funds may be used either to reduce existing domestic borrowing, generating a return equal to the interest saved, or placed on short-term deposit to earn interest during the hedging period. I.e., aim is to use it to either reduce interest costs or increase interest income.</p>
+                        <p><b>Option 3: Lead Payment</b></p>
+                        <p>In this option, there are three steps too, with the last being based on how we'd like to use that money.</p>
+                        <p>Step 1 is to offer a discount, Step 2 is to convert the foreign currency to home currency, and Step 3 is how we're going to use it.</p>
+                        <p><u>Step 1</u>: the discount.</p>
+                        <p>The aim is to encourage early payment by the customer by offering a discount (reducing sales revenue). This is a way to accelerate the cash inflow, but it shortens period of exposure to FX risk, but only if the exchange rate does not change negatively between when agreement it made, and payment date.</p>
+                        <p><u>Step 2</u>: the conversion.</p>
+                        <p>The purpose of converting the foreign currency immediately is to lock in its home currency value. If conversion were delayed, movements in the exchange rate could result in fewer home currency being received, whereas early conversion fixes the amount with certainty.</p>
+                        <p><u>Step 3</u>: the spending.</p>
+                        <p>The converted funds may be used either to reduce existing domestic borrowing, generating a return equal to the interest saved, or placed on short-term deposit to earn interest during the hedging period. I.e., aim is to use it to either reduce interest costs or increase interest income.</p>
                     </div>
                 </div>
                 <div class="content-box" id="hedgingimporterscenario">
                     <div>
                         <h1>Hedging - Importer Scenario</h1>
-                        <p></p>
+                        <p>Information:</p>
+                        <ul>
+                            <li>The exporter will receive 10 million Hong Kong currency in 3-months time.</li>
+                            <li>Spot is: (Bid) 12.9530 and (Offer) 12.9988</li>
+                            <li>Forward 3-months: (Bid) 12.7884 and (Offer) 12.8484</li>
+                            <li>UK Interest Borrow at 7% with a 5% deposit.</li>
+                            <li>KH Interest Borrow at 6% with a 4% deposit.</li>
+                        </ul>
+                        <p><u>Option 1 - Forward Contract</u></p>
+                        <p>Becuase the exporter is selling foreign currnecy, use offer rate of 12.7884, therefore, (10,000,000 / 12.7884) = 781,959.</p>
+                        <p><u>Option 2 - Money Market Hedge</u></p>
+                        <p>Step 1: borrow foreign currency: 4% / 4 = 1%, therefore, (10,000,000 x 1.01) = 9,900,990.</p>
+                        <p>Step 2: convert to £ (the offer): (9,900,990 / 12.9530) = 764,378.</p>
+                        <p>Step 3: invest in UK: 3 / 12 = 1.25%, therefore, (764,378 x 1.0125) = <b>773,933</b>.</p>
+                        <p>If it's used to reduce UK borrowng: 7% / 4 = 1.75%, therefore, (757,933 x 1.0175) = 771,196.</p>
+                        <p><u>Option 3 - Lead Payment (encourage early payment)</u></p>
+                        <p>Step 2: Convert to spot: (10,000,000 / 12.9530) = 772,022.</p>
+                        <p>Step 3: Invest in UK: 5% / 4 = 1.25, therefore, (772,022 x 1.0125) = <b>781,672</b>.</p>
+                        <p><u>In conclusion</u></p>
+                        <ul>
+                            <li>Option 1: Forward Contract: 781,959.</li>
+                            <li>Option 2: Money Market Hedge: 773,933.</li>
+                            <li>Option 3: Lead Payment: 781,672.</li>
+                        </ul>
+                        <p>Option 2 offers the lowest cost; thus, we with this that option in this scenario.</p>
                     </div>
                 </div>
                 <div class="content-box" id="internalhedgingmethodsnoexternalmarkets">
                     <div>
                         <h1>Internal Hedging Methods (No External Markets)</h1>
-                        <p></p>
+                        <p><b><u>Netting & Matching:</u></b></p>
+                        <p>Used to offset receivables and payables within a group so only the net amount is exchanged. A company has a subsidiary in each Hong Kong, Germany, and UK – net off using a single currency.</p>
+                        <p>For example: we’ll use UK sterling with a UK company being the parent, and the others being subsidiaries.</p>
+                        <ul>
+                            <li>HK owes UK 500k</li>
+                            <li>Germany owes HK 1,200k</li>
+                            <li>UK owes Germany 600k</li>
+                        </ul>
+                        <p>Exchange rate is: £1 = 12 HKD and 1.20 Euro.</p>
+                        <p>We need to convert these to UK Stering as UK company is the parent:</p>
+                        <ul>
+                            <li>Becuase HK owes UK 500k, that's already in UK sterling, so we leave that as is.</li>
+                            <li>Germany owes (in HKD) HK 1.2 million, so we convert HKD to UK Sterling: (1.2m / 12) = 100k</li>
+                            <li>UK owes (in Euro) Germany 600k, so we convert Euro to UK Sterling: (600k / 1.20) = 500k.</li>
+                        </ul>
+                        <p>We then need to move the net amounts in a single transaction to prevent making multiple transactions. Therefore:</p>
+                        <ul>
+                            <li>HK owes UK 500k and is due 100k from Germany, makes net -400k (HK).</li>
+                            <li>UK owes HK 500k and is due 500k from Germany, makes net 0.</li>
+                            <li>Germany owes HK 100k and is due 500k from UK, makes net +400k (Germany).</li>
+                        </ul>
+                        <p>The net position is settled by HK paying Germany 400k. i.e, net is 0 across the board.</p>
+                        <p>On that note, remember: negative net = payer and positive net = receiver.</p>
+                        <p>Therefore, we've reduced 3 transactions to 1 transaction by exchanging the net amounts.</p>
+                        <p><b><u>Lead/Lag Payments</u></b></p>
+                        <ul>
+                            <li>Lead: pay early if expecting exchange rate to worsen.</li>
+                            <li>Lag: delay payment if expecting rate to improve.</li>
+                        </ul>
+                        <p><b><u>Invoice in Home Currency:</u></b></p>
+                        <p>Transfer currency risk to the other party.</p>
                     </div>
                 </div>
                 <div class="content-box" id="theoriesofexchangeratemovements">
                     <div>
                         <h1>Theories of Exchange Rate Movements</h1>
-                        <p></p>
+                        <p><b><u>Purchasing Power Parity (PPP)</u></b></p>
+                        <p>Currencies adjust to keep prices equal between countries. For example:</p>
+                        <ul>
+                            <li>UK Price = £1,000</li>
+                            <li>KH Price = 12,000</li>
+                            <li>Inflation = UK 2%, HK 6%</li>
+                        </ul>
+                        <ul>
+                            <li>Future UK Price: 1,000 x 1.02 = 1,020.</li>
+                            <li>Future HK Price: 12,000 x 1.06 = 12,720.</li>
+                        </ul>
+                        <ul>
+                            <li>Future Exchange Rate: 12,720 / 1,020 = 12.47.</li>
+                        </ul>
+                        <p><b><u>Interest Rate Parity (IRP)</u></b></p>
+                        <p>Interest rates differ because of expected inflation, so currencies with higher interest rates tend to weaken.</p>
+                        <p>Formula: Future Rate = Spot x (1 + foreign interest rate) / (1 + home interest rate).</p>
+                        <p>For example:</p>
+                        <ul>
+                            <li>Spot: 1.6500.</li>
+                            <li>Australia Interest: 1%.</li>
+                            <li>UK Interest: 0.125%</li>
+                            <li>Forward = 1.6500 x (1.01 / 1.00125) = 1.6644</li>
+                        </ul>
+                        <p>Converting back after 3 months gives essentially the same £ as investing in the UK > not arbitrage.</p>
                     </div>
                 </div>
                 <div class="content-box-1" id="previous/next-page">
